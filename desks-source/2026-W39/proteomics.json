@@ -1,0 +1,228 @@
+{
+ "desk": "proteomics",
+ "stories": [
+  {
+   "kind": "lead",
+   "headline": "Menopause leaves a protein fingerprint in blood tied to later dementia",
+   "dek": "Blood proteomics across roughly 15,000 women links the menopausal transition to inflammatory and synaptic shifts that track with brain aging and cognitive decline decades on.",
+   "body": [
+    "Clinicians have long suspected that menopause shapes a woman's later risk of neurodegenerative disease, but the biology connecting the two has been hard to pin down. A multi-cohort study in Nature Medicine now offers a molecular bridge, using blood protein profiles to chart what changes as women pass through menopause and whether those changes echo in the ageing brain.",
+    "The team, led from Sunnybrook Research Institute in Toronto, began with 80 women aged 43 to 58 whose reproductive stage had been carefully classified using the STRAW+10 staging system. Serum profiling with the NULISAseq platform showed that spontaneous menopause coincided with disturbances in proteins tied to inflammation, synaptic function, metabolism and Alzheimer's disease pathways. Notably, these shifts followed hormone levels more closely than chronological age, hinting that the transition itself, not simply getting older, drives the signal.",
+    "The researchers then checked their findings in 2,814 age-matched women with plasma Olink data. The same proteomic shifts reappeared, alongside a broader rise in inflammatory and catabolic processes and signs of faster ageing across organs and cell types, including the brain. Finally, they built a menopause proteomic score and applied it to four independent cohorts of older women, totalling 11,925 people with mean ages between about 61 and 72. Across all four, higher scores went hand in hand with greater cognitive ageing and higher dementia risk.",
+    "The authors suggest the signature could help identify biomarkers, or even drug targets, for protecting brain health in midlife women, a group that is often underrepresented in dementia research."
+   ],
+   "whyItMatters": "It gives a measurable, blood-based handle on a long-suspected link between menopause and dementia, opening a window for studying and eventually intervening in midlife, well before symptoms appear.",
+   "caveats": "The discovery cohort was small (80 women) and the associations in older cohorts are observational, so they do not show that menopausal protein changes cause cognitive decline; the two affinity-based proteomics platforms also measure different protein panels.",
+   "tags": [
+    "plasma proteomics",
+    "menopause",
+    "dementia",
+    "biomarkers"
+   ],
+   "source": {
+    "title": "Blood proteomics of menopause map to brain aging and dementia risk.",
+    "authors": "Wood Alexander et al.",
+    "venue": "Nature Medicine",
+    "date": "2026-09-22",
+    "doi": "10.1038/s41591-026-04648-4",
+    "pmid": "42773212",
+    "url": "https://doi.org/10.1038/s41591-026-04648-4",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "feature",
+   "headline": "Human cells carry thousands of protein variants their genes never specified",
+   "dek": "A proteogenomic survey of 29 healthy tissues finds single amino-acid substitutions, many arising from mistranslation, coexisting with reference proteins.",
+   "body": [
+    "The genome is usually treated as the blueprint for the proteome, but errors and variation at every step from DNA to protein mean a cell's actual protein population is more varied. Researchers at the Weizmann Institute of Science mined a large proteogenomic dataset spanning 29 healthy human tissues and confidently located 13,910 variant peptides, representing 7,215 distinct single amino-acid substitutions, sitting alongside the standard forms of the same proteins.",
+    "Both inherited and somatic variants, as well as substitutions produced by mistranslation, appeared at abundances that mirrored their frequencies in the human population. The team argues that non-genetic substitutions let proteins sample sequence changes that the genetic code would otherwise make hard to reach. They confirmed several substitutions in purified proteins, saw recurring patterns in cancer cell lines starved of amino acids, and identified hundreds of non-genetic variants that recurred across healthy individuals or fell at annotated functional sites."
+   ],
+   "whyItMatters": "If these variants are functional, the human proteome is considerably larger than gene annotations imply, with implications for how proteomics data are searched and interpreted.",
+   "caveats": "The functional importance of most substitutions is proposed rather than demonstrated, and experimental validation covered only selected proteins.",
+   "tags": [
+    "proteogenomics",
+    "mistranslation",
+    "proteoforms"
+   ],
+   "source": {
+    "title": "Encoded and non-genetic protein variants expand human functional proteome.",
+    "authors": "Tretyachenko et al.",
+    "venue": "Nature",
+    "date": "2026-09-14",
+    "doi": "10.1038/s41586-026-11124-z",
+    "pmid": "42742175",
+    "url": "https://doi.org/10.1038/s41586-026-11124-z",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "feature",
+   "headline": "Molecular glue degrader targets drug-resistant ALK lung cancers, including brain tumours",
+   "dek": "TRI-611 recruits the cereblon ligase to a novel surface on ALK fusion proteins, clearing both normal and inhibitor-resistant forms in preclinical models.",
+   "body": [
+    "Kinase inhibitors have transformed treatment of ALK fusion-positive non-small-cell lung cancer, but patients who progress on approved drugs have few options. Scientists at Triana Biomedicines describe TRI-611, a molecular glue that brings the ALK kinase domain into contact with CRBN, the substrate adaptor of the CRL4 ubiquitin ligase, so that the fusion protein is tagged for destruction. The contact forms at a degron interface away from the kinase's active site.",
+    "That unusual interface appears to confer selectivity: across the proteome, the compound spared known CRBN neosubstrates and other kinases. TRI-611 degraded every ALK fusion form tested, including versions resistant to kinase inhibitors, and shrank tumours in cell-line and patient-derived models grown under the skin and inside the skull. Pairing it with conventional ALK inhibitors produced synergistic, lasting regressions. The authors describe it as the first clinical-stage molecular glue degrader aimed at an oncogenic gene fusion."
+   ],
+   "whyItMatters": "It shows that molecular glues can be designed against a specific oncogenic driver rather than discovered by chance, and offers a mechanism orthogonal to inhibitors for resistant disease, including brain metastases.",
+   "caveats": "The data reported are preclinical; clinical safety and efficacy in patients remain to be shown, and the work comes from the company developing the drug.",
+   "tags": [
+    "targeted protein degradation",
+    "molecular glue",
+    "lung cancer"
+   ],
+   "source": {
+    "title": "TRI-611, a selective, brain-penetrant molecular glue degrader of ALK.",
+    "authors": "Conery et al.",
+    "venue": "Nature",
+    "date": "2026-09-09",
+    "doi": "10.1038/s41586-026-10998-3",
+    "pmid": "42717093",
+    "url": "https://doi.org/10.1038/s41586-026-10998-3",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "feature",
+   "headline": "AlphaFold mining uncovers hidden receptor-like proteins that regulate autophagy",
+   "dek": "Structural searches reveal two 'superdark' human protein families that resemble GPCRs; one, TM184C, builds bridges between cells and restrains autophagy.",
+   "body": [
+    "Most protein functions are inferred from sequence similarity, leaving many proteins unannotated. A University of Miami team instead searched millions of AlphaFold2 structural models and found two human seven-transmembrane families, TM184 and PRRT, whose shapes resemble G-protein-coupled receptors even though their sequences give little away. The proteins displayed classic receptor behaviours, recruiting beta-arrestin and undergoing phosphorylation by GPCR kinases.",
+    "The researchers focused on TM184C, the most widely expressed and evolutionarily conserved member. Rather than sitting at the cell surface, it rides on mobile intracellular vesicles along microtubules and promotes nanotube-like connections through which cells share organelles, a process that depends on its C-terminal tail and an arrestin-binding motif. TM184C also limits autophagic flux by curbing LC3B lipidation, and the human protein can rescue autophagy defects in yeast lacking its counterpart, Hfl1."
+   ],
+   "whyItMatters": "It demonstrates structure-first annotation as a practical route into the 'dark proteome' and adds a new, potentially druggable GPCR-like regulator of autophagy.",
+   "caveats": "Findings come largely from cell and yeast experiments; the physiological ligands, if any, and roles in tissues or disease are not yet established.",
+   "tags": [
+    "structure prediction",
+    "dark proteome",
+    "autophagy",
+    "GPCR"
+   ],
+   "source": {
+    "title": "TM184C is a GPCR-like regulator of intercellular exchange and autophagy.",
+    "authors": "Lee et al.",
+    "venue": "Nature",
+    "date": "2026-09-09",
+    "doi": "10.1038/s41586-026-10993-8",
+    "pmid": "42717083",
+    "url": "https://doi.org/10.1038/s41586-026-10993-8",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "brief",
+   "headline": "Time-resolved proteomics powers a 'virtual cell' for drug discovery",
+   "dek": "Westlake University's ProteinTalks model learns from 38 million protein measurements in perturbed breast cancer cells.",
+   "body": [
+    "Researchers generated more than 38 million time-stamped protein-abundance measurements from systematically perturbed breast cancer cell lines and used them to pretrain ProteinTalks, an AI virtual cell model. The model predicted drug efficacy and synergy, flagged resistance-linked proteins, and carried over to patient-derived organoids and clinical biopsies, generally outperforming the benchmark methods tested."
+   ],
+   "tags": [
+    "proteomics",
+    "AI",
+    "drug discovery"
+   ],
+   "source": {
+    "title": "An operational perturbation proteomics-based virtual cell model.",
+    "authors": "Sun et al.",
+    "venue": "Nature",
+    "date": "2026-09-09",
+    "doi": "10.1038/s41586-026-11001-9",
+    "pmid": "42717098",
+    "url": "https://doi.org/10.1038/s41586-026-11001-9",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "brief",
+   "headline": "Cryo-electron tomography maps the cilium's gatekeeper and links it to disease",
+   "dek": "Two linker proteins in the ciliary transition zone are tied to primary ciliary dyskinesia.",
+   "body": [
+    "Using in situ cryo-electron tomography of human multiciliated cells, a Harvard-led team resolved the ciliary transition zone's microtubule doublets at subnanometre resolution and identified nine component proteins. ECT2L and DZANK1 form the main linkers between neighbouring doublets; loss-of-function variants in either gene cause primary ciliary dyskinesia, disrupting zone architecture and mucociliary clearance."
+   ],
+   "tags": [
+    "cryo-EM",
+    "cilia",
+    "rare disease"
+   ],
+   "source": {
+    "title": "In situ structure of the human ciliary transition zone links linker defects to primary ciliary dyskinesia.",
+    "authors": "Zhou et al.",
+    "venue": "Science",
+    "date": "2026-09-10",
+    "doi": "10.1126/science.aei5957",
+    "pmid": "42721274",
+    "url": "https://doi.org/10.1126/science.aei5957",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "brief",
+   "headline": "PD-1 blocks T cell signalling without needing phosphorylation, study finds",
+   "dek": "Unphosphorylated tyrosines in the checkpoint receptor directly suppress LAT condensate formation.",
+   "body": [
+    "Genentech researchers found that PD-1's cytoplasmic tail directly prevents condensation of the T cell scaffold LAT, and that this depends on tyrosines in its inhibitory motifs remaining unphosphorylated. Phosphorylation abolished the effect, and swapping tyrosine for tryptophan preserved inhibition in T cells, challenging the prevailing phosphorylation-centred view of how PD-1 works."
+   ],
+   "tags": [
+    "post-translational modification",
+    "immune checkpoints",
+    "condensates"
+   ],
+   "source": {
+    "title": "Unphosphorylated tyrosines mediate PD-1 inhibition of T cell signaling condensate formation.",
+    "authors": "Sharma et al.",
+    "venue": "Science",
+    "date": "2026-09-10",
+    "doi": "10.1126/science.adt9365",
+    "pmid": "42721241",
+    "url": "https://doi.org/10.1126/science.adt9365",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "brief",
+   "headline": "Urine test detects misfolded alpha-synuclein in Parkinson's and MSA",
+   "dek": "A seed amplification assay on neuron-derived vesicles from urine offers a non-invasive alternative to spinal taps.",
+   "body": [
+    "Korean researchers captured neuronal extracellular vesicles from urine and ran an RT-QuIC seed amplification assay for aggregated alpha-synuclein. In 26 Parkinson's patients, 13 with multiple system atrophy and 25 controls, the test separated Parkinson's from controls with 73.1% sensitivity and 84% specificity, with similar results for MSA; larger validation is needed."
+   ],
+   "tags": [
+    "protein aggregation",
+    "Parkinson's disease",
+    "biomarkers"
+   ],
+   "source": {
+    "title": "Urine-Derived Neuronal Extracellular Vesicle α-Synuclein Seed Amplification Assay for Synucleinopathies: A Non-Invasive Biomarker Study.",
+    "authors": "Tran et al.",
+    "venue": "Movement Disorders",
+    "date": "2026-09-21",
+    "doi": "10.1002/mds.70533",
+    "pmid": "42768739",
+    "url": "https://doi.org/10.1002/mds.70533",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "brief",
+   "headline": "Ubiquitin switch drives kidney cancer resistance to mTOR drugs",
+   "dek": "SPOP-mediated modification of ZMYND8 reroutes signalling, and a NEK7 degrader restores drug sensitivity in mice.",
+   "body": [
+    "In clear cell renal carcinoma, the E3 ligase adaptor SPOP adds K63-linked ubiquitin chains to ZMYND8 at lysine 398, keeping it out of phase-separated compartments and switching on NEK7 transcription. That reactivates p70S6K and blunts everolimus. A NEK7-targeting PROTAC overcame resistance in cells and mice."
+   ],
+   "tags": [
+    "ubiquitination",
+    "PROTAC",
+    "kidney cancer"
+   ],
+   "source": {
+    "title": "SPOP-mediated ZMYND8 ubiquitination and phase separation exclusion drives mTOR inhibitor resistance in kidney cancer.",
+    "authors": "Tang et al.",
+    "venue": "Nature Communications",
+    "date": "2026-08-25",
+    "doi": "10.1038/s41467-026-77043-9",
+    "pmid": "42778578",
+    "url": "https://doi.org/10.1038/s41467-026-77043-9",
+    "peerReviewed": true
+   }
+  }
+ ]
+}

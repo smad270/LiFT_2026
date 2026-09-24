@@ -1,0 +1,222 @@
+{
+ "desk": "health",
+ "stories": [
+  {
+   "kind": "lead",
+   "headline": "A blood test for many cancers fails its first big trial",
+   "dek": "In England's 142,000-person NHS-Galleri trial, annual multicancer screening did not reduce late-stage diagnoses, though a hint of fewer stage IV cancers keeps the question open.",
+   "body": [
+    "The promise of multicancer early-detection tests is simple: a single blood draw that spots tumours from circulating DNA before they spread. The first large randomised test of that promise, published in the New England Journal of Medicine, has come back mostly negative.",
+    "Researchers led by Peter Sasieni of Queen Mary University of London enrolled 142,250 people aged 50 to 77 in England, collecting blood at up to three annual visits. Half had their samples analysed with the Grail test; the other half had samples banked, untested. The main question was whether screening would lower the rate of stage III or IV disease across 12 prespecified cancer types. After three rounds and at least a year of further follow-up, it did not: the incidence rate ratio was 1.03, with a confidence interval of 0.92 to 1.14.",
+    "There was a flicker of something. For stage IV cancers alone, a key secondary endpoint, the ratio was 0.86, with an upper confidence bound sitting right at 1.00. That is suggestive, not conclusive, and the authors call for longer follow-up to see whether the gap widens or evaporates. Harms were few: fewer than 1% of participants reported trial-related adverse events, none serious.",
+    "The result lands at a sensitive moment for a field that has attracted heavy investment and enthusiastic marketing. Shifting diagnoses from late to early stage is widely seen as the minimum a screening test must achieve before anyone can hope it will reduce cancer deaths. On this trial's primary yardstick, that bar was not cleared."
+   ],
+   "whyItMatters": "This is the first large randomised evidence on whether a multicancer blood test changes stage at diagnosis, the outcome most likely to translate into mortality benefit. Health systems weighing adoption now have a sobering benchmark.",
+   "caveats": "Follow-up is still short, and the stage IV signal is a secondary endpoint at the edge of significance. The trial was funded by Grail, the test's maker, and tested one assay in one country.",
+   "tags": [
+    "cancer screening",
+    "liquid biopsy",
+    "randomised trial"
+   ],
+   "source": {
+    "title": "Effect of Screening with Multicancer Early-Detection Test on Late-Stage Cancer Diagnosis.",
+    "authors": "Sasieni et al.",
+    "venue": "The New England Journal of Medicine",
+    "date": "2026-09-22",
+    "doi": "10.1056/NEJMoa2505723",
+    "pmid": "42776074",
+    "url": "https://doi.org/10.1056/NEJMoa2505723",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "feature",
+   "headline": "Immunotherapy displaces toxic chemotherapy for children with leukaemia",
+   "dek": "Swapping two chemotherapy cycles for the bispecific antibody blinatumomab raised four-year event-free survival in high-risk childhood B-cell leukaemia, with far fewer infections.",
+   "body": [
+    "In the AIEOP-BFM ALL 2017 trial, 709 children with newly diagnosed high-risk B-cell acute lymphoblastic leukaemia were randomised after consolidation to two cycles of blinatumomab, which directs T cells against CD19, or two cycles of standard chemotherapy. At a planned interim analysis, after a median of 2.9 years, estimated four-year event-free survival was 83.0% with blinatumomab versus 70.3% with chemotherapy, a hazard ratio of 0.51.",
+    "The antibody was also gentler in most respects. Treatment-related infections struck 23.9% of the blinatumomab group against 69.4% of controls, and life-threatening adverse events were rarer (0.5% versus 4.7%). The trade-off was neurotoxicity, reported in 12.0% of blinatumomab recipients compared with 3.2% on chemotherapy; serious cytokine release syndrome was uncommon."
+   ],
+   "whyItMatters": "The result supports replacing some of the most toxic parts of paediatric leukaemia treatment with a targeted immunotherapy that both works better and causes fewer infections.",
+   "caveats": "These are interim results with under three years of median follow-up, and the higher rate of neurotoxic events needs longer-term scrutiny.",
+   "tags": [
+    "paediatric oncology",
+    "leukaemia",
+    "immunotherapy"
+   ],
+   "source": {
+    "title": "Blinatumomab for Replacing Chemotherapy in Pediatric Acute Lymphoblastic Leukemia.",
+    "authors": "Schrappe et al.",
+    "venue": "The New England Journal of Medicine",
+    "date": "2026-09-17",
+    "doi": "10.1056/NEJMoa2604166",
+    "pmid": "42748428",
+    "url": "https://doi.org/10.1056/NEJMoa2604166",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "feature",
+   "headline": "A B7-H3 drug conjugate extends survival in relapsed lung cancer",
+   "dek": "In a phase 3 trial, tambotatug pelitecan beat topotecan on overall survival, progression and response in small-cell lung cancer that had returned after platinum chemotherapy.",
+   "body": [
+    "Small-cell lung cancer that relapses after platinum chemotherapy has long had few good options; topotecan has been a standard for decades. In the TAISHAN-302 trial, 451 patients were randomised to topotecan or tambotatug pelitecan, an antibody-drug conjugate aimed at the checkpoint protein B7-H3. At a prespecified interim analysis, median overall survival was 13.3 months with the conjugate against 9.4 months with topotecan, a hazard ratio for death of 0.46.",
+    "Other measures moved the same way. Median progression-free survival was 7.4 versus 2.8 months, and confirmed tumour responses occurred in 59.1% of patients on the new drug versus 9.7% on topotecan. Unusually for a head-to-head against chemotherapy, severe (grade 3 or higher) adverse events were less common with the conjugate: 55.4% versus 77.9%."
+   ],
+   "whyItMatters": "B7-H3 is emerging as a major target in small-cell lung cancer, and this is phase 3 evidence of a survival gain over the long-standing second-line standard.",
+   "caveats": "The trial was open-label, the analysis is interim, response was investigator-assessed, and it was conducted by Chinese investigators with industry co-funding; generalisability to other populations is untested.",
+   "tags": [
+    "lung cancer",
+    "antibody-drug conjugate",
+    "phase 3"
+   ],
+   "source": {
+    "title": "Tambotatug Pelitecan in Small-Cell Lung Cancer after Platinum-Based Therapy.",
+    "authors": "Zhao et al.",
+    "venue": "The New England Journal of Medicine",
+    "date": "2026-09-12",
+    "doi": "10.1056/NEJMoa2610229",
+    "pmid": "42734213",
+    "url": "https://doi.org/10.1056/NEJMoa2610229",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "feature",
+   "headline": "Injections every eight weeks outperform daily pills for African teenagers with HIV",
+   "dek": "Long-acting cabotegravir-rilpivirine proved superior to daily oral therapy at keeping virus suppressed in adolescents in Kenya, South Africa, Uganda and Zimbabwe.",
+   "body": [
+    "Adolescents living with HIV fare worse on treatment than other age groups, often because daily pills are hard to sustain. The LATA trial randomised 476 virally suppressed 12- to 19-year-olds, nearly all infected at birth and with a median of almost 12 years on therapy, to intramuscular cabotegravir-rilpivirine every eight weeks or to the standard daily dolutegravir-based pill.",
+    "By week 96, confirmed viral rebound had occurred in two participants on injections (an estimated 0.9%) versus 15 on pills (6.4%). The injectable regimen met the non-inferiority criterion and went on to show superiority. Serious and severe adverse events were broadly similar between groups; there was one treatment-related serious hypersensitivity reaction, and a handful of participants stopped injections for various reasons."
+   ],
+   "whyItMatters": "The trial provides randomised evidence from sub-Saharan Africa, where most adolescents with HIV live, that long-acting therapy can beat oral treatment for this age group.",
+   "caveats": "The trial was open-label and enrolled only adolescents already suppressed with no prior treatment failure; cost and delivery at scale were not addressed.",
+   "tags": [
+    "HIV",
+    "adolescent health",
+    "long-acting therapy"
+   ],
+   "source": {
+    "title": "Switch to injectable cabotegravir-rilpivirine given every 8 weeks in adolescents living with HIV with virological suppression in sub-Saharan Africa (LATA): a randomised, open-label, multicentre, 96-week non-inferiority trial.",
+    "authors": "Bwakura-Dangarembizi et al.",
+    "venue": "The Lancet",
+    "date": "2026-09-17",
+    "doi": "10.1016/S0140-6736(26)01537-0",
+    "pmid": "42753775",
+    "url": "https://doi.org/10.1016/S0140-6736(26)01537-0",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "brief",
+   "headline": "Waiting five years for a follow-up colonoscopy looks safe",
+   "dek": "An interim analysis of the European EPoS II trial finds later surveillance after high-risk adenoma removal is non-inferior to the guideline three years.",
+   "body": [
+    "Among 10,799 patients with high-risk adenomas across eight European countries, five-year colorectal cancer incidence was 0.77% when the first surveillance colonoscopy came at five years and 0.82% when it came at three, meeting the trial's non-inferiority margin. Cancer stage looked similar. The final ten-year analysis is still to come."
+   ],
+   "tags": [
+    "colorectal cancer",
+    "screening"
+   ],
+   "source": {
+    "title": "Colonoscopy Intervals and Colorectal Cancer Incidence after Adenoma Removal.",
+    "authors": "Jover et al.",
+    "venue": "The New England Journal of Medicine",
+    "date": "2026-09-17",
+    "doi": "10.1056/NEJMoa2603816",
+    "pmid": "42748427",
+    "url": "https://doi.org/10.1056/NEJMoa2603816",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "brief",
+   "headline": "A week of antibiotics suffices after bone-infection surgery",
+   "dek": "When local antibiotics are implanted during surgery, short systemic courses match long ones.",
+   "body": [
+    "In the SOLARIO trial of 500 adults operated on for orthopaedic infection with an implanted local-antibiotic carrier, seven days or less of systemic antibiotics was non-inferior to four weeks or more: treatment failure by 12 months was 11.1% versus 14.1%. Possible treatment-related symptoms by week six fell from 45.2% to 17.2% with the short course."
+   ],
+   "tags": [
+    "infectious disease",
+    "antibiotic stewardship"
+   ],
+   "source": {
+    "title": "Short or Long Antibiotic Regimens in Orthopedics.",
+    "authors": "McNally et al.",
+    "venue": "The New England Journal of Medicine",
+    "date": "2026-09-16",
+    "doi": "10.1056/NEJMoa2506756",
+    "pmid": "42748421",
+    "url": "https://doi.org/10.1056/NEJMoa2506756",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "brief",
+   "headline": "Eating more eggs and peanuts in pregnancy does not prevent infant allergy",
+   "dek": "An Australian trial of 2,137 high-risk pregnancies found no protective effect of a maternal allergen-rich diet.",
+   "body": [
+    "In the PrEggNut trial, women whose babies had a strong family history of allergy ate at least six eggs and 60 peanuts weekly, or a low-allergen diet, from mid-pregnancy through four months of breastfeeding. IgE-mediated egg or peanut allergy at age one affected 7.8% versus 8.4% of infants, a non-significant difference. Safety was similar."
+   ],
+   "tags": [
+    "allergy",
+    "maternal health"
+   ],
+   "source": {
+    "title": "Trial of a Maternal Diet Rich in Eggs and Peanuts to Reduce Infant Allergy.",
+    "authors": "Palmer et al.",
+    "venue": "The New England Journal of Medicine",
+    "date": "2026-09-17",
+    "doi": "10.1056/NEJMoa2605659",
+    "pmid": "42748429",
+    "url": "https://doi.org/10.1056/NEJMoa2605659",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "brief",
+   "headline": "A would-be stroke neuroprotectant posts a positive phase 3",
+   "dek": "Loberamisal, which targets PSD-95 signalling and alpha2-GABA-A receptors, improved 90-day recovery in a Chinese trial.",
+   "body": [
+    "In the LAIS trial of 998 patients with moderate ischaemic stroke treated within 48 hours, ten days of intravenous loberamisal raised the share reaching a near-normal outcome (modified Rankin 0-1) at 90 days to 69.7%, from 56.3% on placebo. Adverse events were similar. The authors say validation in broader populations is needed, a caution given neuroprotection's history of failed replications."
+   ],
+   "tags": [
+    "stroke",
+    "neurology",
+    "neuroprotection"
+   ],
+   "source": {
+    "title": "Loberamisal for Acute Ischemic Stroke: The LAIS Randomized Clinical Trial.",
+    "authors": "Li et al.",
+    "venue": "JAMA",
+    "date": "2026-09-10",
+    "doi": "10.1001/jama.2026.16557",
+    "pmid": "42721021",
+    "url": "https://doi.org/10.1001/jama.2026.16557",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "brief",
+   "headline": "Clot-buster before thrombectomy adds nothing in late basilar strokes",
+   "dek": "The ATTENTION LATE trial finds tenecteplase does not improve outcomes 4.5 to 24 hours after basilar artery occlusion.",
+   "body": [
+    "Across 40 Chinese stroke centres, 330 patients with moderate-to-severe basilar artery occlusion were randomised to intravenous tenecteplase plus thrombectomy or thrombectomy alone. Functional independence at 90 days was 30% in both arms. Symptomatic brain haemorrhage (5% versus 4%) and mortality (40% versus 43%) were similar, so the drug offered no clear benefit in this late window."
+   ],
+   "tags": [
+    "stroke",
+    "thrombolysis"
+   ],
+   "source": {
+    "title": "Tenecteplase Before Thrombectomy at 4.5 to 24 Hours for Basilar Artery Occlusion: The ATTENTION LATE Randomized Clinical Trial.",
+    "authors": "Li et al.",
+    "venue": "JAMA",
+    "date": "2026-09-23",
+    "doi": "10.1001/jama.2026.15496",
+    "pmid": "42776543",
+    "url": "https://doi.org/10.1001/jama.2026.15496",
+    "peerReviewed": true
+   }
+  }
+ ]
+}

@@ -1,0 +1,190 @@
+{
+  "desk": "genomics",
+  "stories": [
+    {
+      "kind": "lead",
+      "headline": "An inherited EGFR mutation, traced to Appalachia, raises lung-cancer risk",
+      "dek": "A study of more than 3.3 million people finds that germline T790M carriers face lung-cancer risk exceeding that of smoking, especially if they never smoked.",
+      "body": [
+        "Oncologists know EGFR T790M as the mutation that lets lung tumours shrug off first-generation targeted drugs. Far rarer is inheriting it. A new analysis in Science, drawing on genetic data from more than 3.3 million people, argues that being born with this variant is a potent and specific cause of lung cancer in its own right.",
+        "The association was strikingly narrow. Carriers were significantly more likely to develop lung cancer, yet showed no excess risk across 17 other cancer types. The size of the effect is what stands out: the authors report that it exceeds the risk conferred by smoking, and that it is several times greater among people who have never smoked. The variant's effect also did not interact with polygenic risk, suggesting it acts largely independently of the many small-effect variants that shape common-disease susceptibility.",
+        "The team then asked where the variant came from. Carriers are more common in the United States than among British- and Irish-descended populations elsewhere, a pattern the authors attribute to a founder event in Southern Appalachia roughly 200 to 225 years ago. That single origin has pushed up the variant's frequency regionally, and it now appears in people of British, Irish and African descent.",
+        "The finding matters because lung-cancer screening in most countries is gated on smoking history, which by design misses never-smokers. If carriers can be identified, the authors suggest, targeted genetic testing and dedicated screening could catch cancers that current rules overlook."
+      ],
+      "whyItMatters": "It identifies a single inherited variant that confers high lung-cancer risk largely outside smoking-based screening criteria, pointing to a concrete group who might benefit from genetic testing and surveillance.",
+      "caveats": "The abstract does not report absolute risks or carrier counts, and the variant is rare, so risk estimates may carry wide uncertainty; how screening should change for carriers remains to be tested.",
+      "tags": ["cancer genetics", "germline risk", "founder effect", "lung cancer"],
+      "source": {
+        "title": "Germline T790M mutation and lung cancer risk.",
+        "authors": "LoPiccolo et al.",
+        "venue": "Science",
+        "date": "2026-09-17",
+        "doi": "10.1126/science.aec0473",
+        "pmid": "42752144",
+        "url": "https://doi.org/10.1126/science.aec0473",
+        "peerReviewed": true
+      }
+    },
+    {
+      "kind": "feature",
+      "headline": "How gene switches remodelled the human skeleton, and our joints",
+      "dek": "Testing more than half a million human-specific DNA changes reveals a coordinated dampening of cartilage sugar production that may explain human joint fragility.",
+      "body": [
+        "Bipedal walking, a big braincase and a birth canal to match all required a reshaped skeleton, but the genetic edits behind it have been hard to pin down. Writing in Nature, an international team screened 561,410 human-derived substitutions in promoters and enhancers using massively parallel reporter assays in chondrocytes, flagging 15,077 loci with human-specific regulatory activity. They then fused human and ape cells into hybrids, turned them into osteochondral progenitors, and combined the two datasets into genome-wide maps of human-specific changes in cis-regulation.",
+        "The standout pattern was a broad rewiring of the extracellular matrix, above all a suppression of glycosaminoglycan synthesis. Human joints hold roughly three to four times less glycosaminoglycan than those of other apes. The shift carries signatures of natural selection, and the authors propose it helps explain why humans are unusually prone to degenerative joint disease."
+      ],
+      "whyItMatters": "It connects specific evolutionary regulatory changes to a measurable tissue trait that bears on osteoarthritis, offering a mechanistic view of why human joints wear out.",
+      "caveats": "Reporter assays and hybrid cells in culture may not capture regulation in developing tissue, and the link to degenerative disease is inferred rather than directly shown.",
+      "tags": ["human evolution", "MPRA", "gene regulation", "skeleton"],
+      "source": {
+        "title": "The gene-regulatory evolution of the human skeleton.",
+        "authors": "Yan et al.",
+        "venue": "Nature",
+        "date": "2026-09-23",
+        "doi": "10.1038/s41586-026-11053-x",
+        "pmid": "42778609",
+        "url": "https://doi.org/10.1038/s41586-026-11053-x",
+        "peerReviewed": true
+      }
+    },
+    {
+      "kind": "feature",
+      "headline": "CRISPR's ancestor read DNA in a gapped code",
+      "dek": "Newly described VIPR systems, descended from a precursor of the first CRISPR effectors, pick out DNA targets with interspersed guide letters, and seem to have evolved for phage-on-phage warfare.",
+      "body": [
+        "CRISPR-Cas guide RNAs work by straightforward base-pairing along a continuous stretch of target. A study in Science describes what may be the evolutionary starting point: Viral Interference Programmable Repeat (VIPR) systems, built around a Vipr protein that is ancestral to the earliest CRISPR-Cas effectors. Their RNAs are made of alternating GGY and NN motifs, and only the variable NN dinucleotides specify the target, together encoding a gapped sequence on double-stranded DNA.",
+        "The natural targets of these RNAs suggest VIPR systems are weapons that phages deploy against competing phages. The researchers also reprogrammed the complex to repress transcription, showing it can be steered to defend against phage. An accompanying commentary frames the finding as evidence that RNA-guided immunity may have originated in ancient viral conflict."
+      ],
+      "whyItMatters": "It suggests a new origin story for CRISPR immunity and shows a previously unknown way of encoding target information, which could expand the toolkit for programmable DNA recognition.",
+      "caveats": "The evolutionary account rests on phylogenetic inference, and the programmable repression was demonstrated in a phage-defence setting, not in eukaryotic cells.",
+      "tags": ["CRISPR", "evolution", "phage", "RNA-guided proteins"],
+      "source": {
+        "title": "A noncontiguous code for RNA-guided DNA recognition at the origin of CRISPR-Cas.",
+        "authors": "Yoon et al.",
+        "venue": "Science",
+        "date": "2026-09-17",
+        "doi": "10.1126/science.aei0498",
+        "pmid": "42752133",
+        "url": "https://doi.org/10.1126/science.aei0498",
+        "peerReviewed": true
+      }
+    },
+    {
+      "kind": "feature",
+      "headline": "A 5.6-million-nucleus map of how DNA variants act in the brain",
+      "dek": "A multi-ancestry, single-nucleus eQTL atlas of the prefrontal cortex exposes cell-type-specific disease genes that bulk tissue studies miss.",
+      "body": [
+        "Most risk variants for common disease sit outside genes and adjust expression, often in just one cell type. To resolve which, a Mount Sinai-led team profiled 5.6 million nuclei from the prefrontal cortex of 1,384 donors of diverse ancestry, reporting in Nature Genetics. Across eight major cell classes and 27 subclasses they found genetic regulation for 14,258 genes, with 981 showing cell-type-specific effects at the class level and 857 at the subclass level.",
+        "Colocalizing these signals with disease associations turned up new cell-type-specific candidate genes for Alzheimer's disease, schizophrenia and other disorders that were invisible in bulk tissue. Because donors spanned a broad age range, the team also found 2,073 genes whose regulation shifts along developmental trajectories, and 1,655 with trans effects. Companion papers in Nature from the same group add a disease atlas, a lifespan atlas and a cell-type-resolved transcriptome-wide association study."
+      ],
+      "whyItMatters": "Knowing which brain cell type a risk variant acts in narrows the search for causal genes and drug targets in neuropsychiatric and neurodegenerative disease.",
+      "caveats": "The tissue is postmortem and limited to one cortical region; developmental dynamics are inferred from donors of different ages, not tracked in individuals.",
+      "tags": ["eQTL", "single-cell", "brain", "psychiatric genetics"],
+      "source": {
+        "title": "Single-nucleus atlas of cell-type specific genetic regulation in the human brain.",
+        "authors": "Zeng et al.",
+        "venue": "Nature Genetics",
+        "date": "2026-09-23",
+        "doi": "10.1038/s41588-026-02733-5",
+        "pmid": "42778721",
+        "url": "https://doi.org/10.1038/s41588-026-02733-5",
+        "peerReviewed": true
+      }
+    },
+    {
+      "kind": "brief",
+      "headline": "Cancer's circular DNA has an Achilles' heel at TA repeats",
+      "dek": "Blocking microhomology-mediated end joining selectively strips tumours of oncogene-laden extrachromosomal DNA.",
+      "body": [
+        "Extrachromosomal DNA circles often carry amplified oncogenes. A Nature study finds that TA-rich sites on these circles are break hotspots, and that the damage is repaired by microhomology-mediated end joining. Inhibiting that pathway, but not the other two main break-repair routes, depleted ecDNA and weakened dependent cancer cells, which points to polymerase theta inhibitors as a possible therapy."
+      ],
+      "tags": ["ecDNA", "DNA repair", "cancer"],
+      "source": {
+        "title": "MMEJ repair of breaks at TA repeats maintains ecDNA and cancer fitness.",
+        "authors": "Billing et al.",
+        "venue": "Nature",
+        "date": "2026-09-23",
+        "doi": "10.1038/s41586-026-11048-8",
+        "pmid": "42778593",
+        "url": "https://doi.org/10.1038/s41586-026-11048-8",
+        "peerReviewed": true
+      }
+    },
+    {
+      "kind": "brief",
+      "headline": "Jumping genes that hop between cells",
+      "dek": "Fly retrotransposons without an envelope protein reach the germline through cellular protrusions.",
+      "body": [
+        "Retrotransposons are usually thought to stay inside the cell that expresses them. In the Drosophila ovary, a Cell study finds LTR elements that pass from somatic cells into the oocyte using a small transmembrane protein, sORF2, which resembles viral fusogens and sits on invasive protrusions carrying capsids. Similar proteins turn up across insect retrotransposons and in some non-enveloped viruses."
+      ],
+      "tags": ["transposons", "germline", "Drosophila"],
+      "source": {
+        "title": "Direct cell-to-cell transmission of retrotransposons.",
+        "authors": "Voichek et al.",
+        "venue": "Cell",
+        "date": "2026-09-23",
+        "doi": "10.1016/j.cell.2026.08.047",
+        "pmid": "42777706",
+        "url": "https://doi.org/10.1016/j.cell.2026.08.047",
+        "peerReviewed": true
+      }
+    },
+    {
+      "kind": "brief",
+      "headline": "Bat genomes place the origin of flight in Europe",
+      "dek": "Genome assemblies from 103 species, combined with fossils, redraw the bat family tree.",
+      "body": [
+        "Using chromosome-level genomes from 103 bat species spanning all 21 families, together with morphological data covering 44 fossils, a Nature study rebuilds bat phylogeny and reconstructs 26 ancestral chromosomes. The analysis places the origin of bats, and so of powered flight, in late-Palaeocene Europe, and suggests laryngeal echolocation arose before the crown group diversified."
+      ],
+      "tags": ["evolutionary genomics", "phylogenetics", "bats"],
+      "source": {
+        "title": "Reference genomes and fossils revise bat family phylogeny and biogeography.",
+        "authors": "Morales et al.",
+        "venue": "Nature",
+        "date": "2026-09-23",
+        "doi": "10.1038/s41586-026-11007-3",
+        "pmid": "42778608",
+        "url": "https://doi.org/10.1038/s41586-026-11007-3",
+        "peerReviewed": true
+      }
+    },
+    {
+      "kind": "brief",
+      "headline": "An ancient lupus haplotype trades autoimmunity for viral defence",
+      "dek": "A common IRF7 variant boosts interferon-alpha, helping fight viruses while raising autoantibodies.",
+      "body": [
+        "Fine-mapping of a lupus risk locus points to a common coding haplotype in IRF7 that ancient DNA shows has stayed frequent for millennia. In AJHG, researchers show it strengthens IRF7's DNA binding and raises interferon-alpha output. Mice engineered to carry the variant controlled viral infection better but also made more autoantibodies."
+      ],
+      "tags": ["autoimmunity", "interferon", "balancing selection"],
+      "source": {
+        "title": "A highly prevalent lupus risk haplotype increases IRF7-dependent induction of IFN-α, enhancing antiviral defense and exacerbating autoimmunity.",
+        "authors": "Virolainen et al.",
+        "venue": "American Journal of Human Genetics",
+        "date": "2026-09-11",
+        "doi": "10.1016/j.ajhg.2026.08.016",
+        "pmid": "42727579",
+        "url": "https://doi.org/10.1016/j.ajhg.2026.08.016",
+        "peerReviewed": true
+      }
+    },
+    {
+      "kind": "brief",
+      "headline": "For polygenic scores, more data is not always better",
+      "dek": "All of Us genomes improve prediction in under-represented groups, but pooling biobanks can backfire.",
+      "body": [
+        "Using 245,388 All of Us whole genomes plus UK Biobank data, a Nature Genetics study built multiancestry risk scores for 32 traits. Diversity improved accuracy, especially in under-represented groups. For less polygenic traits, though, All of Us-only training beat meta-analysis in African-ancestry participants, and accuracy fell as ancestry diverged from the discovery cohort."
+      ],
+      "tags": ["polygenic risk", "biobanks", "ancestry"],
+      "source": {
+        "title": "All of Us diversity and scale yield context-dependent improvements in polygenic prediction.",
+        "authors": "Tsuo et al.",
+        "venue": "Nature Genetics",
+        "date": "2026-09-14",
+        "doi": "10.1038/s41588-026-02734-4",
+        "pmid": "42736379",
+        "url": "https://doi.org/10.1038/s41588-026-02734-4",
+        "peerReviewed": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,226 @@
+{
+ "desk": "technology",
+ "stories": [
+  {
+   "kind": "lead",
+   "headline": "Designed proteins learn to grab sugars, not just surfaces",
+   "dek": "A generative model that invents sequence and structure together produced the first de novo proteins reported to bind a free carbohydrate, one of them able to tell blood-group antigens apart.",
+   "body": [
+    "Computational protein design has had a good few years, but its successes have clustered on the easy targets: rigid protein surfaces with greasy pockets where a designed binder can wedge itself in. Polar, water-covered epitopes and small floppy molecules such as sugars have largely defeated the field. A new preprint from a large team led by Kieran Didi describes a way around the problem, and reports binders against target classes that previous methods have not reached.",
+    "The approach, called latent generative search, wraps a reward-guided search around a generative model of protein complexes at the moment of generation rather than after it. Crucially, the model produces sequence and backbone structure jointly in a shared continuous latent space, which removes the separate inverse-folding step that most current pipelines depend on to decide which amino acids should occupy a designed fold.",
+    "The authors then did something unusual for a design paper: they tested at industrial scale. More than a million designs were screened by multiplexed phage display. Latent generative search yielded more validated binders than any other method in the comparison, and the jointly designed sequences outperformed sequences that were redesigned onto the same backbones afterwards. Validated binders included ones against therapeutic receptors, a viral attachment protein and intracellular signalling proteins.",
+    "The headline result is the carbohydrate. The team reports de novo proteins that bind a free sugar, including one that discriminates between blood-group antigens. If that holds up, it opens a target class - glycans, which coat essentially every human cell and most pathogens - that has been effectively off-limits to computational binder design, and where the existing reagents are mostly antibodies and plant lectins of uneven specificity."
+   ],
+   "whyItMatters": "Reagents that recognise specific sugars are scarce and hard to raise by conventional means, yet glycans carry much of the information on cell surfaces. A design route to them would touch diagnostics, glycobiology and biologics alike.",
+   "caveats": "This is a bioRxiv preprint and has not been peer reviewed. Phage-display validation reports binding, not therapeutic specificity or behaviour in cells, and the carbohydrate binders are a small number of examples.",
+   "tags": [
+    "protein design",
+    "generative models",
+    "glycobiology"
+   ],
+   "source": {
+    "title": "Latent generative search unlocks de novo design of untapped biomolecular interactions at scale",
+    "authors": "Didi et al.",
+    "venue": "bioRxiv",
+    "date": "2026-09-18",
+    "doi": "10.64898/2026.09.12.751118",
+    "pmid": "42779796",
+    "url": "https://doi.org/10.64898/2026.09.12.751118",
+    "peerReviewed": false
+   }
+  },
+  {
+   "kind": "feature",
+   "headline": "A hundred million cells, eleven hundred drug conditions",
+   "dek": "Tahoe-100M profiles 100 million single-cell transcriptomes across 50 cancer cell lines and 1,100 drug-dose conditions, and the whole thing is public.",
+   "body": [
+    "Perturbation atlases have been growing steadily; Tahoe-100M, published in Cell, jumps a scale. The dataset comprises 100 million single-cell transcriptomes from 50 cancer cell lines exposed to 1,100 drug-dose conditions. The trick that makes it feasible is the Mosaic platform, which pools genetically distinct cell models into balanced 'cell villages' so that thousands of perturbations are profiled in parallel with, the authors report, minimal batch effects.",
+    "Beyond cataloguing expression shifts, the atlas quantifies phenotypes that transcriptomes alone often obscure: proliferation, cytotoxicity, lineage-specific vulnerabilities and cell-cycle changes. It also captures whether a drug pushes a population toward divergent fates or converges it on one state. Pathway-level signatures were used to classify mechanisms of action, flag off-target activity and expose adaptive stress responses linked to resistance. The release is explicitly framed as training material for predictive models of cell behaviour."
+   ],
+   "whyItMatters": "Models that predict how cells respond to drugs have been starved of large, uniformly generated perturbation data; this is the kind of resource that changes what can be trained.",
+   "caveats": "Everything here is cancer cell lines in culture, multiplexed into pooled villages - not primary tissue, and not an in vivo readout of drug response.",
+   "tags": [
+    "single-cell",
+    "drug response",
+    "datasets"
+   ],
+   "source": {
+    "title": "Tahoe-100M: Mapping drug-induced molecular phenotypes at single-cell resolution",
+    "authors": "Zhang et al.",
+    "venue": "Cell",
+    "date": "2026-09-17",
+    "doi": "10.1016/j.cell.2026.08.035",
+    "pmid": "42753697",
+    "url": "https://doi.org/10.1016/j.cell.2026.08.035",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "feature",
+   "headline": "Prime assembly slots large DNA into cells that aren't dividing",
+   "dek": "A CRISPR method that synthesises DNA from two flaps installs medium-to-large sequences without double-strand breaks, donor DNA or cell-cycle dependence.",
+   "body": [
+    "Putting a whole gene into a chosen genomic site is still the awkward middle ground of genome editing. Homology-directed repair does it, but needs dividing cells and a double-stranded donor. Writing in Nature, Sebastien Levesque and colleagues describe prime assembly, which uses CRISPR-targeted dual flap synthesis to assemble and integrate DNA sequences directly in human cells, programmed by RNA.",
+    "The method takes single- or double-stranded DNA fragments and is reported to work comparably in dividing and non-dividing cells - a meaningful difference for tissues such as neurons and muscle. The authors used it for targeted exon recoding, transgene integration and rearrangements on a megabase scale, including at therapeutically relevant loci in primary human cells, all without nuclease-driven double-strand breaks."
+   ],
+   "whyItMatters": "Break-free installation of gene-sized cargo in post-mitotic primary cells is the capability gap standing between prime-editing chemistry and many candidate genetic therapies.",
+   "caveats": "The work is a proof of capability in cells; efficiencies, delivery and off-target behaviour in a living organism are not settled by it.",
+   "tags": [
+    "genome editing",
+    "CRISPR",
+    "gene therapy"
+   ],
+   "source": {
+    "title": "Targeted genomic integration and rearrangement using prime assembly",
+    "authors": "Levesque et al.",
+    "venue": "Nature",
+    "date": "2026-09-16",
+    "doi": "10.1038/s41586-026-11024-2",
+    "pmid": "42749803",
+    "url": "https://doi.org/10.1038/s41586-026-11024-2",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "feature",
+   "headline": "A neural network trained on one patient, in five minutes",
+   "dek": "xvr builds a patient-specific model from a preoperative scan using simulated X-rays, then aligns 3D volumes to live fluoroscopy in seconds.",
+   "body": [
+    "Image-guided intervention depends on lining up a preoperative CT or MRI with the two-dimensional fluoroscopy the surgeon is actually watching. Existing solutions split badly: optimisation methods need per-patient hyperparameter fiddling, while deep-learning ones need large hand-labelled datasets and stay stuck on the anatomy they were trained on. Vivek Gopalakrishnan and colleagues, reporting in Nature, sidestep both by generating training data from the patient's own scan through physics-based simulation of X-ray formation - no manual annotation anywhere.",
+    "A foundation model pretrained on thousands of whole-body scans adapts to a new anatomical region with about five minutes of fine-tuning, after which registration runs in seconds. In what the authors describe as the largest evaluation of 2D/3D registration on real fluoroscopy so far, spanning different anatomical structures, imaging modalities and hospitals, accuracy improved on existing methods by an order of magnitude. The software is released open source."
+   ],
+   "whyItMatters": "Registration accuracy is the quiet bottleneck in surgical navigation and robotics; a self-supervised, anatomy-agnostic method removes the per-site engineering that has kept these systems specialised.",
+   "caveats": "Evaluation is retrospective on real fluoroscopy data rather than prospective in the operating room, and the five-minute fine-tuning step assumes a suitable preoperative volume exists.",
+   "tags": [
+    "medical imaging",
+    "deep learning",
+    "surgical navigation"
+   ],
+   "source": {
+    "title": "Rapid patient-specific neural networks for X-ray to volume registration",
+    "authors": "Gopalakrishnan et al.",
+    "venue": "Nature",
+    "date": "2026-09-16",
+    "doi": "10.1038/s41586-026-11045-x",
+    "pmid": "42749809",
+    "url": "https://doi.org/10.1038/s41586-026-11045-x",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "brief",
+   "headline": "An AI agent tidies up half a billion cells",
+   "dek": "scBaseCount mines the Sequence Read Archive with an AI agent and reprocesses everything uniformly.",
+   "body": [
+    "Public single-cell data is abundant and nearly unusable in bulk, because the metadata is a free-text mess. scBaseCount, reported in Cell, puts an AI agent to work finding 10x Genomics datasets in the Sequence Read Archive, standardising their metadata and reprocessing the reads uniformly: more than 502 million cells across 27 organisms and 75 tissues."
+   ],
+   "tags": [
+    "databases",
+    "single-cell",
+    "AI agents"
+   ],
+   "source": {
+    "title": "scBaseCount: An AI agent-curated, standardized, auto-updated single-cell data repository",
+    "authors": "Youngblut et al.",
+    "venue": "Cell",
+    "date": "2026-09-17",
+    "doi": "10.1016/j.cell.2026.08.025",
+    "pmid": "42753696",
+    "url": "https://doi.org/10.1016/j.cell.2026.08.025",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "brief",
+   "headline": "Bayesian phylogenetics, now running in a browser tab",
+   "dek": "Delphy reproduces outbreak analyses two to three orders of magnitude faster than standard tools.",
+   "body": [
+    "Bayesian phylogenetics is the gold standard for outbreak genomics and far too slow for routine use. Delphy reformulates it around an explicit mutation-annotated tree that exploits sequence similarity within epidemics. Reanalysing Ebola, Zika, SARS-CoV-2, mpox and H5N1 data, it matched accuracy two to three orders of magnitude faster, and runs locally in a browser."
+   ],
+   "tags": [
+    "phylogenetics",
+    "outbreak response",
+    "software"
+   ],
+   "source": {
+    "title": "Scalable near-real-time Bayesian phylogenetics for outbreaks with Delphy",
+    "authors": "Varilly et al.",
+    "venue": "Nature",
+    "date": "2026-09-16",
+    "doi": "10.1038/s41586-026-11012-6",
+    "pmid": "42749814",
+    "url": "https://doi.org/10.1038/s41586-026-11012-6",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "brief",
+   "headline": "Calling variants from noisy nanopore RNA reads",
+   "dek": "NanoTS pushes SNP detection in long-read transcriptomes to clinically interesting accuracy.",
+   "body": [
+    "Nanopore transcriptome sequencing is good at isoforms and historically poor at single nucleotide variants. NanoTS, a deep-learning caller in Nature Methods, reports F-scores above 0.980 on direct RNA and 0.966 on cDNA for variants with five or more supporting reads, improving most on allelically imbalanced variants, and genotypes pathogenic Mendelian variants."
+   ],
+   "tags": [
+    "nanopore",
+    "variant calling",
+    "deep learning"
+   ],
+   "source": {
+    "title": "NanoTS: a deep learning tool for accurate SNP calling in nanopore long-read transcriptome data",
+    "authors": "Liu et al.",
+    "venue": "Nature Methods",
+    "date": "2026-09-22",
+    "doi": "10.1038/s41592-026-03225-4",
+    "pmid": "42773294",
+    "url": "https://doi.org/10.1038/s41592-026-03225-4",
+    "peerReviewed": true
+   }
+  },
+  {
+   "kind": "brief",
+   "headline": "Cells swap barcodes to reveal who their neighbours are",
+   "dek": "match-seq turns cell-cell proximity into sequenceable information, enabling CRISPR screens on tumour-immune interactions.",
+   "body": [
+    "match-seq uses virus-like particles to ferry barcoded mRNAs from cells to their neighbours, so spatial relationships survive tissue dissociation and can be read out by sequencing. Coupled to CRISPR screens in a mouse tumour, it flagged deletions that recruit distinct effector arms - Tgfb1 loss engaging T cells and macrophages, Nectin3 loss NK cells."
+   ],
+   "tags": [
+    "CRISPR screens",
+    "spatial biology",
+    "tumour immunology"
+   ],
+   "source": {
+    "title": "In vivo intercellular CRISPR screens using viral proximity barcoding reveal regulators of tumor-immune interactions",
+    "authors": "Du et al.",
+    "venue": "bioRxiv",
+    "date": "2026-09-18",
+    "doi": "10.64898/2026.09.16.752238",
+    "pmid": "42779810",
+    "url": "https://doi.org/10.64898/2026.09.16.752238",
+    "peerReviewed": false
+   }
+  },
+  {
+   "kind": "brief",
+   "headline": "Your single-cell model may be grading its own homework",
+   "dek": "Random train-test splits leak labels between related cells, sometimes enough to reverse a clinical conclusion.",
+   "body": [
+    "Cells are not independent: clones, patients and batches share labels, so a random train-test split lets a model score well by recognising a sibling. This preprint quantifies the risk before training using two measures, exposure and retrievability, and reports one patient cohort where the inflation was enough to overturn a clinical conclusion."
+   ],
+   "tags": [
+    "machine learning",
+    "benchmarking",
+    "single-cell"
+   ],
+   "source": {
+    "title": "Cell-level random splits leak group-owned answers in single-cell benchmarks",
+    "authors": "Cang et al.",
+    "venue": "bioRxiv",
+    "date": "2026-09-15",
+    "doi": "10.64898/2026.09.09.750484",
+    "pmid": "42780116",
+    "url": "https://doi.org/10.64898/2026.09.09.750484",
+    "peerReviewed": false
+   }
+  }
+ ]
+}
