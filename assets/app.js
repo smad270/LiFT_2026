@@ -101,7 +101,7 @@
   function loadEdition(id, cb) {
     if (loaded[id]) return cb(loaded[id]);
     var s = document.createElement("script");
-    s.src = "editions/" + id + ".js";
+    s.src = "editions/" + id + ".js?v=" + (M.stamp || "");
     s.onload = function () { cb(loaded[id] || null); };
     s.onerror = function () { cb(null); };
     document.head.appendChild(s);

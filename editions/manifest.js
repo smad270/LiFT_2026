@@ -34,5 +34,6 @@ window.HELIX_MANIFEST = {
    "date": "2026-09-24",
    "coverage": "Sep 9 – 24, 2026"
   }
- ]
+ ],
+ "stamp": "20260924175329"
 };

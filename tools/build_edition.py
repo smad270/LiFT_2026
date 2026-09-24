@@ -107,6 +107,7 @@ def main():
         "window.HELIX_EDITIONS = window.HELIX_EDITIONS || {};\n"
         f"window.HELIX_EDITIONS[{json.dumps(ed_id)}] = "
         + json.dumps(edition, ensure_ascii=False, indent=1) + ";\n")
+    manifest["stamp"] = dt.datetime.now().strftime("%Y%m%d%H%M%S")
     MANIFEST.write_text("window.HELIX_MANIFEST = " + json.dumps(manifest, ensure_ascii=False, indent=1) + ";\n")
     if args.events:
         ev = json.loads(pathlib.Path(args.events).read_text())
@@ -118,6 +119,12 @@ def main():
         (ROOT / "events" / "events.js").write_text(
             "window.LIFT_EVENTS = " + json.dumps(ev, ensure_ascii=False, indent=1) + ";\n")
         print(f"published {len(ev['events'])} events")
+    # Cache-bust: stamp asset links so browsers fetch fresh files after each build.
+    stamp = dt.datetime.now().strftime("%Y%m%d%H%M%S")
+    index = ROOT / "index.html"
+    html = re.sub(r'((?:assets/(?:style\.css|app\.js))|(?:editions/manifest\.js)|(?:events/events\.js))(\?v=\d+)?"',
+                  lambda m: f'{m.group(1)}?v={stamp}"', index.read_text())
+    index.write_text(html)
     n = sum(len(d["stories"]) for d in desks.values())
     print(f"built {ed_id} (Edition No. {number}): {len(desks)} desks, {n} stories")
 
