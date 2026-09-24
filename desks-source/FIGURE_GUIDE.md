@@ -1,4 +1,4 @@
-# LIFT explainer-figure guide
+# LiFT explainer-figure guide
 
 Each figure is JSON: {"title", "caption", "steps": [..], "svg"} stored in
 desks-source/<week>/figures/<desk>.json, keyed by story index as a string ("0" = lead, "1"-"3" = features).

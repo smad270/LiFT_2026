@@ -1,4 +1,4 @@
-/* LIterature For Today (LIFT) — static, file:// friendly renderer.
+/* LIterature For Today (LiFT) — static, file:// friendly renderer.
  *
  * Routes (hash based so the site works when opened straight from disk):
  *   #/                         front page of the latest edition

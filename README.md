@@ -1,4 +1,4 @@
-# LIterature For Today (LIFT)
+# LIterature For Today (LiFT)
 
 A personal weekly newspaper of new research in genomics, proteomics, technology and health.
 

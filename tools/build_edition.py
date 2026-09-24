@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Assemble desk JSON files into a new edition of LIterature For Today (LIFT).
+"""Assemble desk JSON files into a new edition of LIterature For Today (LiFT).
 
 Usage:
   python3 tools/build_edition.py --desks DIR --date 2026-09-24 \
