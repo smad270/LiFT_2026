@@ -1,6 +1,11 @@
 window.HELIX_MANIFEST = {
  "desks": [
   {
+   "id": "field",
+   "name": "Your Field",
+   "tagline": "Chromatin, multi-omics and type 1 diabetes."
+  },
+  {
    "id": "genomics",
    "name": "Genomics",
    "tagline": "Genes, genomes and the regulation of both."

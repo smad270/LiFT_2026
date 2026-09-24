@@ -119,6 +119,7 @@
       if (!ed.desks[d.id]) return;
       nav += '<a href="#/' + ed.id + "/" + d.id + '"' + (activeDesk === d.id ? ' class="active"' : "") + ">" + esc(d.name) + "</a>";
     });
+    if (window.LIFT_EVENTS) nav += '<a href="#/events"' + (activeDesk === "events" ? ' class="active"' : "") + ">Events</a>";
     nav += '<a href="#/archive"' + (activeDesk === "archive" ? ' class="active"' : "") + ">Archive</a>";
     document.getElementById("desknav").innerHTML = nav;
     var isLatest = ed.id === latestId();
@@ -148,6 +149,7 @@
       html += '<h3 class="hl hl-m"><a href="' + storyHref(ed.id, d.id, 0) + '">' + esc(s.headline) + "</a>" + dot(ed.id, d.id, 0) + "</h3>";
       html += '<p class="dek dek-s">' + esc(s.dek) + "</p></article>";
     });
+    html += comingUpBox();
     html += "</div></div>";
 
     html += '<div class="desk-columns">';
@@ -264,6 +266,140 @@
     });
   }
 
+  // ---------- events ----------
+  var EV_TYPES = ["Conference", "Symposium", "Workshop", "Course", "Seminar", "Webinar"];
+  var evState = { q: "", type: "All", topic: "All", format: "All" };
+  function todayISO() { var d = new Date(); return new Date(d.getTime() - d.getTimezoneOffset() * 6e4).toISOString().slice(0, 10); }
+  function daysUntil(iso) { return Math.round((new Date(iso + "T12:00:00") - new Date(todayISO() + "T12:00:00")) / 864e5); }
+  function upcomingEvents() {
+    var t = todayISO();
+    return ((window.LIFT_EVENTS || {}).events || []).filter(function (e) { return (e.end || e.start) >= t; })
+      .sort(function (a, b) { return a.start < b.start ? -1 : a.start > b.start ? 1 : 0; });
+  }
+  function fmtRange(e) {
+    var o = { month: "short", day: "numeric" };
+    var a = fmtDate(e.start, o), b = fmtDate(e.end || e.start, o);
+    var y = e.start.slice(0, 4);
+    return (a === b ? a : e.start.slice(0, 7) === (e.end || "").slice(0, 7) ? a + "–" + b.replace(/^\D+ /, "") : a + " – " + b) + ", " + y;
+  }
+  function place(e) {
+    if (e.format === "Virtual") return "Online";
+    return [e.venue, [e.city, e.state].filter(Boolean).join(", ")].filter(Boolean).join(" · ");
+  }
+  function icsFor(e) {
+    var d = function (iso) { return iso.replace(/-/g, ""); };
+    var end = new Date((e.end || e.start) + "T12:00:00"); end.setDate(end.getDate() + 1);
+    var endISO = end.toISOString().slice(0, 10);
+    var clean = function (x) { return String(x || "").replace(/[\\;,]/g, function (c) { return "\\" + c; }).replace(/\n/g, " "); };
+    return ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//LiFT//Events//EN", "BEGIN:VEVENT",
+      "UID:" + d(e.start) + "-" + clean(e.title).replace(/\W+/g, "").slice(0, 40) + "@lift",
+      "DTSTAMP:" + d(todayISO()) + "T000000Z",
+      "DTSTART;VALUE=DATE:" + d(e.start), "DTEND;VALUE=DATE:" + d(endISO),
+      "SUMMARY:" + clean(e.title), "LOCATION:" + clean(place(e)),
+      "DESCRIPTION:" + clean((e.time ? e.time + " — " : "") + (e.why || "") + " " + e.url),
+      "URL:" + e.url, "END:VEVENT", "END:VCALENDAR"].join("\r\n");
+  }
+  function eventCard(e, i) {
+    var dl = (e.deadlines || []).map(function (x) {
+      var n = daysUntil(x.date), cls = n < 0 ? "closed" : n <= 30 ? "soon" : "";
+      var when = n < 0 ? "closed" : n === 0 ? "today" : "in " + n + " day" + (n === 1 ? "" : "s");
+      return '<span class="dl ' + cls + '">' + esc(x.label) + ": " + esc(fmtDate(x.date, { month: "short", day: "numeric" })) + " · " + when + "</span>";
+    }).join("");
+    var mon = fmtDate(e.start, { month: "short" }).toUpperCase(), day = e.start.slice(8, 10).replace(/^0/, "");
+    return '<li class="ev"><div class="ev-date"><span class="m">' + mon + '</span><span class="d">' + day + "</span></div>" +
+      '<div class="ev-body"><div class="kicker">' + esc(e.type) + ' <span class="badge fmt">' + esc(e.format) + "</span></div>" +
+      '<h3 class="hl hl-s"><a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.title) + "</a></h3>" +
+      '<div class="meta">' + esc(fmtRange(e)) + (e.time ? " · " + esc(e.time) : "") + " · " + esc(place(e)) + (e.organizer ? " · " + esc(e.organizer) : "") + "</div>" +
+      (e.why ? '<p class="ev-why">' + esc(e.why) + "</p>" : "") +
+      (dl ? '<div class="dls">' + dl + "</div>" : "") +
+      '<div class="ev-actions"><button type="button" class="ics" data-i="' + i + '">Add to calendar</button>' +
+      '<a class="src" href="' + esc(e.url) + '" target="_blank" rel="noopener">Official page ↗</a>' +
+      (e.topics || []).map(function (t) { return '<span class="tag">' + esc(t) + "</span>"; }).join("") + "</div></div></li>";
+  }
+  function renderEventList() {
+    var all = upcomingEvents(), q = evState.q.toLowerCase();
+    var list = all.filter(function (e) {
+      if (evState.type !== "All" && e.type !== evState.type) return false;
+      if (evState.topic !== "All" && (e.topics || []).indexOf(evState.topic) < 0) return false;
+      if (evState.format !== "All" && e.format !== evState.format) return false;
+      if (q && [e.title, e.city, e.state, e.organizer, e.why, (e.topics || []).join(" ")].join(" ").toLowerCase().indexOf(q) < 0) return false;
+      return true;
+    });
+    var html = "", month = "";
+    list.forEach(function (e) {
+      var m = fmtDate(e.start, { month: "long", year: "numeric" });
+      if (m !== month) { if (month) html += "</ul>"; html += '<div class="section-head"><span>' + esc(m) + '</span></div><ul class="ev-list">'; month = m; }
+      html += eventCard(e, all.indexOf(e));
+    });
+    if (month) html += "</ul>";
+    document.getElementById("ev-count").textContent = list.length + " of " + all.length + " upcoming events";
+    document.getElementById("ev-results").innerHTML = html || '<p class="empty">No events match these filters.</p>';
+  }
+  function viewEvents() {
+    loadEdition(latestId(), function (ed) {
+      if (ed) renderChrome(ed, "events");
+      var data = window.LIFT_EVENTS;
+      if (!data) return viewMissing();
+      var all = upcomingEvents();
+      var topics = [];
+      all.forEach(function (e) { (e.topics || []).forEach(function (t) { if (topics.indexOf(t) < 0) topics.push(t); }); });
+      topics.sort();
+      var types = EV_TYPES.filter(function (t) { return all.some(function (e) { return e.type === t; }); });
+      var chips = function (name, vals) {
+        return '<div class="chips" data-f="' + name + '">' + ["All"].concat(vals).map(function (v) {
+          return '<button type="button" class="chip' + (evState[name] === v ? " on" : "") + '" data-v="' + esc(v) + '">' + esc(v) + "</button>";
+        }).join("") + "</div>";
+      };
+      var soon = [];
+      all.forEach(function (e) { (e.deadlines || []).forEach(function (x) { var n = daysUntil(x.date); if (n >= 0 && n <= 45) soon.push({ e: e, x: x, n: n }); }); });
+      soon.sort(function (a, b) { return a.n - b.n; });
+      var html = '<div class="desk-title"><h2>Events</h2><p>Talks, seminars, workshops and conferences in the US, next six months. Updated ' +
+        esc(fmtDate(data.updated, { month: "long", day: "numeric", year: "numeric" })) + ".</p></div>";
+      html += '<div class="desk-grid"><div>';
+      html += '<div class="ev-filters"><input id="ev-q" type="search" placeholder="Search events, cities, topics…" value="' + esc(evState.q) + '" aria-label="Search events">' +
+        '<div class="fl"><span class="lbl">Type</span>' + chips("type", types) + "</div>" +
+        '<div class="fl"><span class="lbl">Topic</span>' + chips("topic", topics) + "</div>" +
+        '<div class="fl"><span class="lbl">Format</span>' + chips("format", ["In person", "Hybrid", "Virtual"]) + "</div>" +
+        '<div class="meta" id="ev-count"></div></div>';
+      html += '<div id="ev-results"></div></div>';
+      html += '<aside class="wire"><h3>Deadlines ahead</h3><p class="sub">Abstract and registration dates in the next 45 days.</p>';
+      html += soon.length ? "<ol>" + soon.map(function (s) {
+        return '<li><a href="' + esc(s.e.url) + '" target="_blank" rel="noopener">' + esc(s.e.title) + '</a><span class="v">' + esc(s.x.label) + " · " +
+          esc(fmtDate(s.x.date, { month: "short", day: "numeric" })) + " · " + (s.n === 0 ? "today" : "in " + s.n + " day" + (s.n === 1 ? "" : "s")) + "</span></li>";
+      }).join("") + "</ol>" : '<p class="sub">None in the next 45 days.</p>';
+      html += '<p class="sub" style="margin-top:14px">Dates can change. Always confirm on the official page before registering or submitting.</p></aside></div>';
+      app.innerHTML = html;
+      renderEventList();
+      document.getElementById("ev-q").addEventListener("input", function (ev) { evState.q = ev.target.value; renderEventList(); });
+    });
+  }
+  app.addEventListener("click", function (e) {
+    var chip = e.target.closest(".chip");
+    if (chip) {
+      var box = chip.parentNode;
+      evState[box.getAttribute("data-f")] = chip.getAttribute("data-v");
+      box.querySelectorAll(".chip").forEach(function (c) { c.classList.toggle("on", c === chip); });
+      return renderEventList();
+    }
+    var b = e.target.closest(".ics");
+    if (b) {
+      var ev = upcomingEvents()[parseInt(b.getAttribute("data-i"), 10)];
+      var url = URL.createObjectURL(new Blob([icsFor(ev)], { type: "text/calendar" }));
+      var a = document.createElement("a");
+      a.href = url; a.download = ev.title.replace(/[^\w]+/g, "-").slice(0, 60) + ".ics";
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(function () { URL.revokeObjectURL(url); }, 1000);
+    }
+  });
+
+  function comingUpBox() {
+    var up = upcomingEvents().slice(0, 4);
+    if (!up.length) return "";
+    return '<article class="coming-up"><div class="kicker">Coming up</div><ul>' + up.map(function (e) {
+      return '<li><span class="meta">' + esc(fmtRange(e)) + " · " + esc(e.format === "Virtual" ? "Online" : [e.city, e.state].filter(Boolean).join(", ")) + '</span><a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.title) + "</a></li>";
+    }).join("") + '</ul><a class="more" href="#/events">All events →</a></article>';
+  }
+
   function viewMissing() {
     app.innerHTML = '<p class="empty">That page isn’t in this edition. <a href="#/">Return to the front page.</a></p>';
   }
@@ -273,6 +409,7 @@
     var parts = location.hash.replace(/^#\/?/, "").split("/").filter(Boolean);
     window.scrollTo(0, 0);
     if (parts[0] === "archive") return viewArchive();
+    if (parts[0] === "events") return viewEvents();
     var edId = parts[0] && editionMeta(parts[0]) ? parts[0] : latestId();
     var rest = parts[0] && editionMeta(parts[0]) ? parts.slice(1) : parts;
     loadEdition(edId, function (ed) {

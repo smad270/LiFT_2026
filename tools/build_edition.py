@@ -24,6 +24,7 @@ EDITIONS = ROOT / "editions"
 MANIFEST = EDITIONS / "manifest.js"
 
 DESKS = [
+    {"id": "field", "name": "Your Field", "tagline": "Chromatin, multi-omics and type 1 diabetes."},
     {"id": "genomics", "name": "Genomics", "tagline": "Genes, genomes and the regulation of both."},
     {"id": "proteomics", "name": "Proteomics", "tagline": "Proteins: their shapes, partners and modifications."},
     {"id": "technology", "name": "Technology", "tagline": "New tools, methods and machines for biology."},
@@ -61,6 +62,7 @@ def main():
     ap.add_argument("--coverage", required=True)
     ap.add_argument("--top", default="genomics", help="desk whose lead is the front-page top story")
     ap.add_argument("--note", default="")
+    ap.add_argument("--events", help="events JSON to publish as events/events.js")
     ap.add_argument("--figures", help="folder of <desk>.json explainer figures keyed by story index")
     args = ap.parse_args()
 
@@ -106,6 +108,16 @@ def main():
         f"window.HELIX_EDITIONS[{json.dumps(ed_id)}] = "
         + json.dumps(edition, ensure_ascii=False, indent=1) + ";\n")
     MANIFEST.write_text("window.HELIX_MANIFEST = " + json.dumps(manifest, ensure_ascii=False, indent=1) + ";\n")
+    if args.events:
+        ev = json.loads(pathlib.Path(args.events).read_text())
+        for e in ev["events"]:
+            for k in ("title", "type", "start", "format", "url"):
+                if not e.get(k):
+                    sys.exit(f"event missing {k}: {e.get('title')}")
+        (ROOT / "events").mkdir(exist_ok=True)
+        (ROOT / "events" / "events.js").write_text(
+            "window.LIFT_EVENTS = " + json.dumps(ev, ensure_ascii=False, indent=1) + ";\n")
+        print(f"published {len(ev['events'])} events")
     n = sum(len(d["stories"]) for d in desks.values())
     print(f"built {ed_id} (Edition No. {number}): {len(desks)} desks, {n} stories")
 

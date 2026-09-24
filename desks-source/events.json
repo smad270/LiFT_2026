@@ -1,0 +1,634 @@
+{
+ "updated": "2026-09-24",
+ "events": [
+  {
+   "title": "Transposable Elements (CSHL Meeting)",
+   "type": "Conference",
+   "start": "2026-09-29",
+   "end": "2026-10-03",
+   "time": null,
+   "city": "Cold Spring Harbor",
+   "state": "NY",
+   "venue": "Cold Spring Harbor Laboratory",
+   "format": "Hybrid",
+   "organizer": "Cold Spring Harbor Laboratory",
+   "deadlines": [
+    {
+     "label": "Registration deadline (standard rate)",
+     "date": "2026-09-24"
+    }
+   ],
+   "topics": [
+    "Chromatin",
+    "Epigenetics",
+    "Gene regulation"
+   ],
+   "why": "Heterochromatin loss unleashes transposable elements, so TE silencing is a direct readout of chromatin erosion in stressed beta cells.",
+   "url": "https://meetings.cshl.edu/meetings.aspx?meet=TRANSPOSE"
+  },
+  {
+   "title": "2026 SCSAP Spatial Biology Symposium: Technology to Discovery",
+   "type": "Symposium",
+   "start": "2026-10-02",
+   "end": "2026-10-02",
+   "time": "9:00 am–5:00 pm ET",
+   "city": "Ann Arbor",
+   "state": "MI",
+   "venue": "University of Michigan North Campus Research Complex, Building 18",
+   "format": "In person",
+   "organizer": "University of Michigan Single Cell Spatial Analysis Program",
+   "deadlines": [
+    {
+     "label": "Poster abstract deadline (extended)",
+     "date": "2026-09-25"
+    }
+   ],
+   "topics": [
+    "Spatial",
+    "Single-cell",
+    "Multi-omics"
+   ],
+   "why": "Spatial omics methods could place epigenomic and transcriptomic changes in beta cells within the insulitic islet niche.",
+   "url": "https://singlecellspatialanalysis.umich.edu/2026spatial-biology-symposium/"
+  },
+  {
+   "title": "Epigenetics Distinguished Seminar: Feng Yue (Northwestern)",
+   "type": "Seminar",
+   "start": "2026-10-05",
+   "end": "2026-10-05",
+   "time": "4:00–5:00 pm ET",
+   "city": "Philadelphia",
+   "state": "PA",
+   "venue": "Smilow Center for Translational Research, 9th Floor",
+   "format": "In person",
+   "organizer": "Penn Epigenetics Institute",
+   "deadlines": [],
+   "topics": [
+    "3D genome",
+    "Chromatin",
+    "Computational"
+   ],
+   "why": "Penn Epigenetics Institute distinguished seminar series on chromatin and epigenetic regulation. Talk title not yet posted.",
+   "url": "https://hosting.med.upenn.edu/epigenetics/event/feng-yue-ph-d-northwestern-university-epigenetics-distinguished-seminar/"
+  },
+  {
+   "title": "Epigenetics Monthly Seminar: Hao Yuan Kueh (Yale)",
+   "type": "Seminar",
+   "start": "2026-10-08",
+   "end": "2026-10-08",
+   "time": "4:00–5:00 pm ET",
+   "city": "Philadelphia",
+   "state": "PA",
+   "venue": "Smilow 9-146, 3400 Civic Center Blvd.",
+   "format": "In person",
+   "organizer": "Penn Epigenetics Institute",
+   "deadlines": [],
+   "topics": [
+    "Epigenetics",
+    "Immunology",
+    "Gene regulation"
+   ],
+   "why": "Penn Epigenetics Institute monthly seminar on chromatin and epigenetic regulation. Talk title not yet posted.",
+   "url": "https://hosting.med.upenn.edu/epigenetics/event/hao-yuan-kueh-yale-monthly-seminar-series/"
+  },
+  {
+   "title": "Breakthrough T1D Clinical & Research Congress (CRC 2026)",
+   "type": "Conference",
+   "start": "2026-10-09",
+   "end": "2026-10-11",
+   "time": null,
+   "city": "Philadelphia",
+   "state": "PA",
+   "venue": "Pennsylvania Convention Center",
+   "format": "In person",
+   "organizer": "Breakthrough T1D",
+   "deadlines": [],
+   "topics": [
+    "T1D",
+    "Immunology",
+    "Islets"
+   ],
+   "why": "The first Breakthrough T1D congress, held in Philadelphia, covers T1D discovery science, immunotherapies and islet therapies.",
+   "url": "https://bt1dcongress.org/general-information/"
+  },
+  {
+   "title": "IDOM/DRC Seminar: Feyza Engin (UW-Madison)",
+   "type": "Seminar",
+   "start": "2026-10-13",
+   "end": "2026-10-13",
+   "time": "11:00 am ET",
+   "city": "Philadelphia",
+   "state": "PA",
+   "venue": "Smilow Center for Translational Research (SCTR) 12-146",
+   "format": "Hybrid",
+   "organizer": "Penn Institute for Diabetes, Obesity and Metabolism / Penn DRC",
+   "deadlines": [],
+   "topics": [
+    "T1D",
+    "Islets"
+   ],
+   "why": "Penn Institute for Diabetes, Obesity and Metabolism seminar series, the local diabetes research forum. Talk title not yet posted.",
+   "url": "https://www.med.upenn.edu/idom/pdfs/Fall2026-SeriesRoster2.pdf"
+  },
+  {
+   "title": "Joint CVI/IDOM Seminar: Daniel J. Drucker (Toronto)",
+   "type": "Seminar",
+   "start": "2026-10-20",
+   "end": "2026-10-20",
+   "time": "11:00 am ET",
+   "city": "Philadelphia",
+   "state": "PA",
+   "venue": "Smilow Center for Translational Research (SCTR) 12-146",
+   "format": "Hybrid",
+   "organizer": "Penn IDOM / Penn Cardiovascular Institute",
+   "deadlines": [],
+   "topics": [
+    "Diabetes",
+    "Islets"
+   ],
+   "why": "Joint Penn cardiovascular and diabetes (IDOM) seminar. Talk title not yet posted.",
+   "url": "https://www.med.upenn.edu/idom/pdfs/Fall2026-SeriesRoster2.pdf"
+  },
+  {
+   "title": "IDOM/DRC Seminar: Golnaz Vahedi (Penn)",
+   "type": "Seminar",
+   "start": "2026-10-27",
+   "end": "2026-10-27",
+   "time": "11:00 am ET",
+   "city": "Philadelphia",
+   "state": "PA",
+   "venue": "Smilow Center for Translational Research (SCTR) 12-146",
+   "format": "Hybrid",
+   "organizer": "Penn Institute for Diabetes, Obesity and Metabolism / Penn DRC",
+   "deadlines": [],
+   "topics": [
+    "Chromatin",
+    "T1D",
+    "Multi-omics"
+   ],
+   "why": "Penn Institute for Diabetes, Obesity and Metabolism seminar series, the local diabetes research forum. Talk title not yet posted.",
+   "url": "https://www.med.upenn.edu/idom/pdfs/Fall2026-SeriesRoster2.pdf"
+  },
+  {
+   "title": "Biological Data Science (CSHL Meeting)",
+   "type": "Conference",
+   "start": "2026-11-04",
+   "end": "2026-11-07",
+   "time": null,
+   "city": "Cold Spring Harbor",
+   "state": "NY",
+   "venue": "Cold Spring Harbor Laboratory",
+   "format": "Hybrid",
+   "organizer": "Cold Spring Harbor Laboratory",
+   "deadlines": [
+    {
+     "label": "Poster abstract deadline",
+     "date": "2026-10-01"
+    },
+    {
+     "label": "Registration deadline (standard rate)",
+     "date": "2026-10-29"
+    }
+   ],
+   "topics": [
+    "Computational",
+    "Multi-omics",
+    "Single-cell"
+   ],
+   "why": "Covers statistical and machine-learning methods for integrating large multi-omic datasets such as paired single-cell RNA/ATAC from human islets.",
+   "url": "https://meetings.cshl.edu/meetings.aspx?meet=DATA"
+  },
+  {
+   "title": "Tutorials in Genomics & Bioinformatics: RNA-Seq Analysis",
+   "type": "Course",
+   "start": "2026-11-08",
+   "end": "2026-11-10",
+   "time": null,
+   "city": "Cold Spring Harbor",
+   "state": "NY",
+   "venue": "Cold Spring Harbor Laboratory",
+   "format": "In person",
+   "organizer": "Cold Spring Harbor Laboratory",
+   "deadlines": [
+    {
+     "label": "Application deadline (or until full)",
+     "date": "2026-10-02"
+    }
+   ],
+   "topics": [
+    "Computational",
+    "Gene regulation",
+    "Single-cell"
+   ],
+   "why": "A short hands-on course for trainees who need RNA-seq analysis skills to pair with chromatin profiling.",
+   "url": "https://meetings.cshl.edu/courses.aspx?course=TGAC2"
+  },
+  {
+   "title": "Epigenetics Monthly Seminar: Andres Blanco (Penn)",
+   "type": "Seminar",
+   "start": "2026-11-12",
+   "end": "2026-11-12",
+   "time": "4:00 pm ET",
+   "city": "Philadelphia",
+   "state": "PA",
+   "venue": null,
+   "format": "In person",
+   "organizer": "Penn Epigenetics Institute",
+   "deadlines": [],
+   "topics": [
+    "Epigenetics",
+    "Chromatin"
+   ],
+   "why": "Penn Epigenetics Institute monthly seminar on chromatin and epigenetic regulation. Talk title not yet posted.",
+   "url": "https://hosting.med.upenn.edu/epigenetics/events/"
+  },
+  {
+   "title": "Computational Genomics (CSHL Course)",
+   "type": "Course",
+   "start": "2026-11-14",
+   "end": "2026-11-21",
+   "time": null,
+   "city": "Cold Spring Harbor",
+   "state": "NY",
+   "venue": "Cold Spring Harbor Laboratory",
+   "format": "In person",
+   "organizer": "Cold Spring Harbor Laboratory",
+   "deadlines": [
+    {
+     "label": "Application deadline (closed)",
+     "date": "2026-09-11"
+    }
+   ],
+   "topics": [
+    "Computational",
+    "Gene regulation"
+   ],
+   "why": "Trains people to find regulatory elements in sequencing data, a core skill for mapping eroded enhancers. Applications for 2026 are closed, so this is for planning next year.",
+   "url": "https://meetings.cshl.edu/courses.aspx?course=C-ECG"
+  },
+  {
+   "title": "Broad MIA Seminar: Elham Azizi & Mingxuan Zhang (Columbia)",
+   "type": "Seminar",
+   "start": "2026-12-02",
+   "end": "2026-12-02",
+   "time": "9:00 am primer; 10:00 am seminar ET",
+   "city": "Cambridge",
+   "state": "MA",
+   "venue": "Broad Institute, 75 Ames St., M1",
+   "format": "Hybrid",
+   "organizer": "Broad Institute Models, Inference & Algorithms (MIA)",
+   "deadlines": [],
+   "topics": [
+    "Computational",
+    "Single-cell",
+    "Immunology"
+   ],
+   "why": "Broad Institute Models, Inference & Algorithms seminar on computational biology methods; joinable remotely. Talk title not yet posted.",
+   "url": "https://www.broadinstitute.org/talks/fall-2026/mia"
+  },
+  {
+   "title": "IDOM/DRC Seminar: Sarah Henrickson (CHOP)",
+   "type": "Seminar",
+   "start": "2026-12-08",
+   "end": "2026-12-08",
+   "time": "11:00 am ET",
+   "city": "Philadelphia",
+   "state": "PA",
+   "venue": "Smilow Center for Translational Research (SCTR) 12-146",
+   "format": "Hybrid",
+   "organizer": "Penn Institute for Diabetes, Obesity and Metabolism / Penn DRC",
+   "deadlines": [],
+   "topics": [
+    "Immunology",
+    "Diabetes"
+   ],
+   "why": "Penn Institute for Diabetes, Obesity and Metabolism seminar series, the local diabetes research forum. Talk title not yet posted.",
+   "url": "https://www.med.upenn.edu/idom/pdfs/Fall2026-SeriesRoster2.pdf"
+  },
+  {
+   "title": "AI in Genomics and Epigenomics Seminar: Jian Ma (Carnegie Mellon)",
+   "type": "Seminar",
+   "start": "2026-12-10",
+   "end": "2026-12-10",
+   "time": "4:00–5:00 pm ET",
+   "city": "Philadelphia",
+   "state": "PA",
+   "venue": null,
+   "format": "In person",
+   "organizer": "Penn Epigenetics Institute",
+   "deadlines": [],
+   "topics": [
+    "3D genome",
+    "Computational",
+    "Epigenetics"
+   ],
+   "why": "Penn seminar series on AI methods for genomics and epigenomics. Talk title not yet posted.",
+   "url": "https://hosting.med.upenn.edu/epigenetics/event/jian-ma-carnegie-mellon-ai-in-genomics-and-epigenomics-seminar-series/"
+  },
+  {
+   "title": "Epigenetics Distinguished Seminar: Brian Strahl (UNC)",
+   "type": "Seminar",
+   "start": "2026-12-14",
+   "end": "2026-12-14",
+   "time": "12:00–1:00 pm ET",
+   "city": "Philadelphia",
+   "state": "PA",
+   "venue": "KRB (formerly BRB) Gaulton Auditorium",
+   "format": "In person",
+   "organizer": "Penn Epigenetics Institute",
+   "deadlines": [],
+   "topics": [
+    "Chromatin",
+    "Epigenetics"
+   ],
+   "why": "Penn Epigenetics Institute distinguished seminar series on chromatin and epigenetic regulation. Talk title not yet posted.",
+   "url": "https://hosting.med.upenn.edu/epigenetics/event/brian-strahl-ph-d-unc-epigenetics-distinguished-seminar/"
+  },
+  {
+   "title": "IDOM/DRC Seminar: George L. King (Harvard)",
+   "type": "Seminar",
+   "start": "2026-12-15",
+   "end": "2026-12-15",
+   "time": "11:00 am ET",
+   "city": "Philadelphia",
+   "state": "PA",
+   "venue": "Smilow Center for Translational Research (SCTR) 12-146",
+   "format": "Hybrid",
+   "organizer": "Penn Institute for Diabetes, Obesity and Metabolism / Penn DRC",
+   "deadlines": [],
+   "topics": [
+    "T1D",
+    "Diabetes"
+   ],
+   "why": "Penn Institute for Diabetes, Obesity and Metabolism seminar series, the local diabetes research forum. Talk title not yet posted.",
+   "url": "https://www.med.upenn.edu/idom/pdfs/Fall2026-SeriesRoster2.pdf"
+  },
+  {
+   "title": "Pacific Symposium on Biocomputing (PSB 2027)",
+   "type": "Conference",
+   "start": "2027-01-03",
+   "end": "2027-01-07",
+   "time": null,
+   "city": "Big Island of Hawaii",
+   "state": "HI",
+   "venue": null,
+   "format": "In person",
+   "organizer": "Pacific Symposium on Biocomputing",
+   "deadlines": [],
+   "topics": [
+    "Computational",
+    "Multi-omics"
+   ],
+   "why": "A computational biology meeting whose sessions often cover multi-omic integration and AI for genomics.",
+   "url": "https://psb.stanford.edu/"
+  },
+  {
+   "title": "Epigenetics Monthly Seminar: Michael Werner (Utah)",
+   "type": "Seminar",
+   "start": "2027-01-14",
+   "end": "2027-01-14",
+   "time": "4:00 pm ET",
+   "city": "Philadelphia",
+   "state": "PA",
+   "venue": null,
+   "format": "In person",
+   "organizer": "Penn Epigenetics Institute",
+   "deadlines": [],
+   "topics": [
+    "Epigenetics",
+    "Chromatin"
+   ],
+   "why": "Penn Epigenetics Institute monthly seminar on chromatin and epigenetic regulation. Talk title not yet posted.",
+   "url": "https://hosting.med.upenn.edu/epigenetics/events/"
+  },
+  {
+   "title": "Reimagining Diabetes: From Molecular Mechanisms to Transformative Therapies (Keystone Symposia)",
+   "type": "Conference",
+   "start": "2027-02-01",
+   "end": "2027-02-04",
+   "time": null,
+   "city": "Keystone",
+   "state": "CO",
+   "venue": "Keystone Resort",
+   "format": "Hybrid",
+   "organizer": "Keystone Symposia",
+   "deadlines": [
+    {
+     "label": "Scholarship deadline",
+     "date": "2026-10-06"
+    },
+    {
+     "label": "Short talk abstract deadline",
+     "date": "2026-10-06"
+    },
+    {
+     "label": "Early registration",
+     "date": "2026-12-02"
+    },
+    {
+     "label": "Poster abstract deadline",
+     "date": "2027-01-11"
+    }
+   ],
+   "topics": [
+    "Diabetes",
+    "Islets",
+    "T1D"
+   ],
+   "why": "The main 2027 Keystone meeting on diabetes pathobiology, and a good venue for beta-cell epigenomic failure mechanisms.",
+   "url": "https://www.keystonesymposia.org/conferences/conference-listing/meeting/A32027"
+  },
+  {
+   "title": "Epigenetics Distinguished Seminar: Todd Macfarlan (NIH)",
+   "type": "Seminar",
+   "start": "2027-02-08",
+   "end": "2027-02-08",
+   "time": "12:00–1:00 pm ET",
+   "city": "Philadelphia",
+   "state": "PA",
+   "venue": "KRB (formerly BRB) Gaulton Auditorium",
+   "format": "In person",
+   "organizer": "Penn Epigenetics Institute",
+   "deadlines": [],
+   "topics": [
+    "Epigenetics",
+    "Chromatin",
+    "Gene regulation"
+   ],
+   "why": "Penn Epigenetics Institute distinguished seminar series on chromatin and epigenetic regulation. Talk title not yet posted.",
+   "url": "https://hosting.med.upenn.edu/epigenetics/event/todd-macfarlan-ph-d-nih-epigenetics-distinguished-seminar/"
+  },
+  {
+   "title": "Cardiometabolism and Interorgan Crosstalk: Novel Mechanisms and Therapies (Keystone Symposia)",
+   "type": "Conference",
+   "start": "2027-02-16",
+   "end": "2027-02-19",
+   "time": null,
+   "city": "Breckenridge",
+   "state": "CO",
+   "venue": "Beaver Run Conference Center",
+   "format": "Hybrid",
+   "organizer": "Keystone Symposia (with the Endocrine Society)",
+   "deadlines": [
+    {
+     "label": "Scholarship deadline",
+     "date": "2026-10-22"
+    },
+    {
+     "label": "Short talk abstract deadline",
+     "date": "2026-10-22"
+    },
+    {
+     "label": "Early registration",
+     "date": "2026-12-17"
+    },
+    {
+     "label": "Poster abstract deadline",
+     "date": "2027-01-26"
+    }
+   ],
+   "topics": [
+    "Diabetes",
+    "Immunology",
+    "Multi-omics"
+   ],
+   "why": "Covers metabolic disease across organs, including immune mechanisms, human genetics and AI-driven discovery. It is broader context and less central to the core project.",
+   "url": "https://www.keystonesymposia.org/conferences/conference-listing/meeting/B22027"
+  },
+  {
+   "title": "18th Annual nPOD Scientific Meeting",
+   "type": "Conference",
+   "start": "2027-03-01",
+   "end": "2027-03-04",
+   "time": null,
+   "city": "Clearwater Beach",
+   "state": "FL",
+   "venue": "Hyatt Regency Clearwater Beach Resort and Spa",
+   "format": "In person",
+   "organizer": "Network for Pancreatic Organ Donors with Diabetes (nPOD)",
+   "deadlines": [],
+   "topics": [
+    "T1D",
+    "Islets",
+    "Immunology"
+   ],
+   "why": "The core meeting for human T1D pancreas tissue research, which is the source of donor samples for islet multi-omics.",
+   "url": "https://npod.org/annual-meeting-registration/"
+  },
+  {
+   "title": "AGBT General Meeting 2027",
+   "type": "Conference",
+   "start": "2027-03-01",
+   "end": "2027-03-04",
+   "time": null,
+   "city": "Orlando",
+   "state": "FL",
+   "venue": "Signia by Hilton Orlando Bonnet Creek",
+   "format": "In person",
+   "organizer": "Advances in Genome Biology and Technology (AGBT)",
+   "deadlines": [
+    {
+     "label": "Application deadline",
+     "date": "2026-10-22"
+    }
+   ],
+   "topics": [
+    "Single-cell",
+    "Spatial",
+    "Multi-omics"
+   ],
+   "why": "A leading venue for new single-cell, spatial and long-read epigenomic technologies. Attendance is by application.",
+   "url": "https://www.agbt.org/general-meeting/"
+  },
+  {
+   "title": "Probabilistic Modeling in Genomics (CSHL Meeting)",
+   "type": "Conference",
+   "start": "2027-03-01",
+   "end": "2027-03-04",
+   "time": null,
+   "city": "Cold Spring Harbor",
+   "state": "NY",
+   "venue": "Cold Spring Harbor Laboratory",
+   "format": "Hybrid",
+   "organizer": "Cold Spring Harbor Laboratory",
+   "deadlines": [
+    {
+     "label": "Abstract deadline",
+     "date": "2027-01-08"
+    },
+    {
+     "label": "Registration deadline (standard rate)",
+     "date": "2027-02-25"
+    }
+   ],
+   "topics": [
+    "Computational",
+    "Gene regulation"
+   ],
+   "why": "Covers statistical models for genomic data that support rigorous inference of regulatory change across T1D cohorts.",
+   "url": "https://meetings.cshl.edu/meetings.aspx?meet=probgen"
+  },
+  {
+   "title": "Network Biology (CSHL Meeting)",
+   "type": "Conference",
+   "start": "2027-03-09",
+   "end": "2027-03-13",
+   "time": null,
+   "city": "Cold Spring Harbor",
+   "state": "NY",
+   "venue": "Cold Spring Harbor Laboratory",
+   "format": "Hybrid",
+   "organizer": "Cold Spring Harbor Laboratory",
+   "deadlines": [
+    {
+     "label": "Abstract deadline",
+     "date": "2027-01-08"
+    },
+    {
+     "label": "Registration deadline (standard rate)",
+     "date": "2027-03-04"
+    }
+   ],
+   "topics": [
+    "Gene regulation",
+    "Computational",
+    "Multi-omics"
+   ],
+   "why": "Covers regulatory networks, context-specific networks and network rewiring, useful frameworks for how beta-cell gene regulatory networks degrade.",
+   "url": "https://meetings.cshl.edu/meetings.aspx?meet=network"
+  },
+  {
+   "title": "Transposable Elements: From Evolution to Engineering (Keystone Symposia)",
+   "type": "Conference",
+   "start": "2027-03-15",
+   "end": "2027-03-18",
+   "time": null,
+   "city": "Breckenridge",
+   "state": "CO",
+   "venue": "Beaver Run Conference Center",
+   "format": "Hybrid",
+   "organizer": "Keystone Symposia",
+   "deadlines": [
+    {
+     "label": "Scholarship/short talk abstract deadline",
+     "date": "2026-11-17"
+    },
+    {
+     "label": "Early registration",
+     "date": "2027-01-13"
+    },
+    {
+     "label": "Poster abstract deadline",
+     "date": "2027-02-22"
+    }
+   ],
+   "topics": [
+    "Epigenetics",
+    "Chromatin",
+    "Gene regulation"
+   ],
+   "why": "Covers epigenetic control of TEs and their role in disease. Co-organizer Ting Wang works on TE epigenomics, which relates to TE derepression under chromatin erosion.",
+   "url": "https://www.keystonesymposia.org/conferences/conference-listing/meeting/C22027"
+  }
+ ]
+}

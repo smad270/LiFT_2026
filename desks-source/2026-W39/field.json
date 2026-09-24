@@ -1,0 +1,268 @@
+{
+  "desk": "field",
+  "stories": [
+    {
+      "kind": "lead",
+      "headline": "Inflammatory enhancer programs erode beta-cell identity within weeks",
+      "dek": "Paired snATAC and snRNA profiling of mouse islets on a high-fat diet finds NF-κB and type I interferon regulons switching on as identity regulons fade. The signature is strongest in T1D donor beta cells.",
+      "body": [
+        "A single-nucleus multiome study of mouse islets suggests beta-cell identity can start to slip within days of metabolic stress, and that the slippage tracks a gain of inflammatory enhancer activity. Ernst and colleagues fed C57BL/6J mice a high-fat diet (HFD) for one or three weeks. They then profiled chromatin accessibility and gene expression in the same nuclei, keeping 20,566 islet nuclei after QC.",
+        "Beta cells moved the most. Genes tied to identity, glucose sensing and circadian rhythm dropped early, and inflammatory genes rose more slowly. SCENIC+ inference kept 16 high-quality enhancer-driven regulons. The ones losing activity included beta-cell regulators such as RFX3. The ones gaining activity were driven by NF-κB family members, with a transient rise, and by type I interferon mediators, which rose later. NicheNet named immune-derived TNF and IFNβ as likely upstream ligands, and many of their predicted targets were the inflammatory transcription factors themselves, which points to a feed-forward loop.",
+        "The response was uneven across cells. Using a TNF/IFNβ target-gene module, the authors identified a high-inflammation beta-cell subpopulation. It made up roughly 0% of beta cells on control diet, about 3% after one week of HFD and about 33% after three weeks.",
+        "Next, the team scored the same module in public human islet scRNA-seq data. In an HPAP-derived cohort (38 non-diabetic, 10 T1D and 17 T2D donors), high-inflammation beta cells were significantly more common in both diabetes types. The rise was much larger in T1D."
+      ],
+      "whyItMatters": "This is a direct multiome readout of the model many chromatin-erosion projects start from: inflammatory transcription factors take over enhancers while identity regulons lose accessibility and output. It supplies a regulon-level signature (NF-κB and type I IFN rising, RFX3-type identity factors falling) and an HPAP link showing the state is enriched in T1D beta cells. Both can be tested directly against human islet scATAC or CUT&Tag data.",
+      "caveats": "The multiome was done in mice with very few animals (one or two per diet and time point), and all were male. The human analysis used transcriptome data only, with a module defined in mouse, so it cannot show that the chromatin changes are conserved. The model is diet-induced stress, not autoimmunity.",
+      "tags": [
+        "snMultiome",
+        "beta-cell identity",
+        "SCENIC+",
+        "type I interferon",
+        "NF-κB",
+        "HPAP"
+      ],
+      "source": {
+        "title": "Single nucleus multiomics reveals an early inflammatory response to high-fat diet in mouse islets.",
+        "authors": "Ernst et al.",
+        "venue": "Life Science Alliance",
+        "date": "2026-09-01",
+        "doi": "10.26508/lsa.202603840",
+        "pmid": "42680559",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42680559/",
+        "peerReviewed": true
+      }
+    },
+    {
+      "kind": "feature",
+      "headline": "T1D pancreatic lymph nodes hold stem-like, less exhausted CD8 T cells",
+      "dek": "CyTOF, scRNA-seq with paired TCRs, and multiplex imaging of nPOD donor tissue describe a CD8 compartment that stays undifferentiated in the lymph node and matures into effectors in the pancreas.",
+      "body": [
+        "Peters and colleagues profiled pancreatic draining lymph nodes (pLNs) from nPOD organ donors, the tissue where islet-reactive T cells are thought to be primed. CyTOF of 10 T1D and 12 non-diabetic donors found more stem-cell-memory-like CD8 T cells (CD45RA+CD27+CD28+CCR7+CXCR3+) in T1D. An independent flow cohort of 23 donors, including autoantibody-positive donors, confirmed an expanded CXCR3+ naive-phenotype CD8 pool in T1D.",
+        "Single-cell RNA-seq with TCR sequencing covered 122,300 cells from 9 T1D and 7 control donors. T1D CD8 cells showed higher inflammatory genes (IFITM3, LTB) and terminal-differentiation regulators (BCL6, BCL3), and lower exhaustion-linked genes such as NR4A2 and DUSP2. Cytokine-signature analysis pointed to IL-15 as a likely driver. Effector clones were shared between pLN and pancreatic slices and looked more terminally differentiated in the pancreas. Near islets, multiplex imaging found TCF1+TOX+ cells with a mix of activation and exhaustion features."
+      ],
+      "whyItMatters": "The authors start from the observation that T1D risk variants concentrate in T- and B-cell enhancers. This atlas identifies which tissue-resident CD8 states those enhancers probably act in, and suggests a failure to engage exhaustion programs. For T1D epigenome work, it gives a target for scATAC or multiome follow-up: test whether the TSCM-like and TCF1+TOX+ states carry the expected chromatin signatures of stemness versus exhaustion, and whether risk variants sit in their accessible regions.",
+      "caveats": "The cohorts are small, and organ-donor tissue captures a single time point, mostly after diagnosis. There is no chromatin assay here, so the epigenetic questions remain inference. IL-15 involvement comes from computational enrichment and was not tested functionally.",
+      "tags": [
+        "CD8 T cells",
+        "pancreatic lymph node",
+        "nPOD",
+        "scRNA-seq",
+        "TCR",
+        "exhaustion"
+      ],
+      "source": {
+        "title": "Immune dysregulation and stem-like CD8+ T cell enrichment in type 1 diabetes pancreatic lymph nodes.",
+        "authors": "Peters et al.",
+        "venue": "Journal of Clinical Investigation",
+        "date": "2026-09-15",
+        "doi": "10.1172/JCI196445",
+        "pmid": "42741944",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42741944/",
+        "peerReviewed": true
+      }
+    },
+    {
+      "kind": "feature",
+      "headline": "Multi-ancestry T1D GWAS ties non-HLA risk to islet chromatin",
+      "dek": "A 63,000-person meta-analysis adds three loci, fine-maps 136 candidate functional variants and names ADCY7 as a cytokine-sensitive beta-cell gene.",
+      "body": [
+        "Fu and colleagues meta-analysed T1D GWAS data across ancestries (26,198 cases, 36,733 controls). They found 69 non-HLA risk regions, including new signals in AHI1, near TRAF1 and near ADCY7. Over a third of the lead variants (26 of 69) were also associated with indices of insulin secretion or insulin resistance. The authors read this as a genetic overlap between autoimmune risk and beta-cell or metabolic function.",
+        "Bayesian fine-mapping combined with three annotation strategies prioritised 136 candidate functional variants. In Roadmap Epigenomics data, these variants were enriched for DNase hypersensitivity, active histone marks and active chromatin states in islets, liver, muscle and fat. At the new 16q12.1 locus, the variant rs1872691 was linked to ADCY7. In beta cells, proinflammatory cytokines lowered Adcy7 expression, and raising or lowering Adcy7 shifted both insulin secretion and cytokine-induced apoptosis in opposite directions."
+      ],
+      "whyItMatters": "This puts non-HLA T1D variants into islet regulatory chromatin as well as immune enhancers, which supports looking at beta-cell-intrinsic risk. The 136-variant set is a ready-made list to overlap with human islet scATAC, CUT&Tag or Hi-C data. It can also be used to ask whether risk enhancers are the ones that lose accessibility as beta-cell identity erodes.",
+      "caveats": "The annotation relies on bulk Roadmap tissue epigenomes, not single-cell islet or immune chromatin maps. Most functional work on ADCY7 used rodent cell models. The effect sizes at the new loci are modest (odds ratios around 1.07 to 1.09).",
+      "tags": [
+        "GWAS",
+        "fine-mapping",
+        "T1D genetics",
+        "regulatory variants",
+        "ADCY7",
+        "islet epigenome"
+      ],
+      "source": {
+        "title": "Shared non-HLA genetic architecture across diverse ancestries links insulin secretion and resistance to type 1 diabetes.",
+        "authors": "Fu et al.",
+        "venue": "Diabetologia",
+        "date": "2026-09-22",
+        "doi": "10.1007/s00125-026-06865-5",
+        "pmid": "42771182",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42771182/",
+        "peerReviewed": true
+      }
+    },
+    {
+      "kind": "feature",
+      "headline": "m6A loss erodes alpha-cell identity and pushes cells toward beta fate",
+      "dek": "Deleting Mettl14 in alpha cells raises YY1, weakens the PAX6/MAFB identity program and drives alpha-to-beta conversion that stops at incompletely mature states.",
+      "body": [
+        "De Jesus and colleagues show that alpha cells rely on N6-methyladenosine (m6A) mRNA methylation to hold their identity. Stimuli that trigger glucagon release, such as L-arginine, raised METTL3, METTL14 and m6A levels. Losing m6A weakened amino-acid-stimulated glucagon secretion and disrupted alpha-cell identity programs. In mice, alpha-cell-specific deletion of Mettl14 shrank alpha-cell mass, expanded beta-cell mass and promoted alpha-to-beta conversion. Some of the converted cells ended up in late beta-like states that were not fully mature.",
+        "Mechanistically, m6A-eCLIP identified the Yy1 transcript as a direct target. Normally, m6A on Yy1 makes the mRNA less stable, apparently via the YTHDF2 reader. When m6A is lost, YY1 rises. That lowers PAX6 and MAFB and switches on IRS2, mTOR and MAPK/ERK signalling."
+      ],
+      "whyItMatters": "YY1 is a chromatin-organizing factor, so this work links an epitranscriptomic layer to an identity-erosion cascade in an islet cell type that T1D leaves alive. For multi-omics studies of T1D, it suggests adding m6A (or its writers and readers) as a layer when modelling identity loss. It also flags that alpha-to-beta conversion strategies may produce immature cells unless the identity network is fully rewired.",
+      "caveats": "The in vivo work is in mouse, and the human relevance of the YY1 axis was not established here. The study does not directly profile the chromatin effects of the rise in YY1.",
+      "tags": [
+        "m6A",
+        "alpha-cell plasticity",
+        "cell identity",
+        "YY1",
+        "transdifferentiation",
+        "epitranscriptome"
+      ],
+      "source": {
+        "title": "m6A mRNA methylation regulates pancreatic α-cell plasticity.",
+        "authors": "De Jesus et al.",
+        "venue": "Nature Metabolism",
+        "date": "2026-09-18",
+        "doi": "10.1038/s42255-026-01591-z",
+        "pmid": "42760315",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42760315/",
+        "peerReviewed": true
+      }
+    },
+    {
+      "kind": "brief",
+      "headline": "NF-κB p65 ChIP-seq maps direct cytokine targets expressed in T1D islets",
+      "dek": "Bulk and single-cell RNA-seq, plus p65 and Pol II ChIP-seq, define IL-1β's immediate-early program in beta cells.",
+      "body": [
+        "Martin and colleagues exposed beta-cell lines and rodent and human islets to IL-1β, then used ChIP-seq to find where p65/RelA and RNA polymerase II bind. The immediate-early genes they identified are conserved across mouse, rat and human, and many are direct p65 targets that are also dysregulated in islets from T1D donors. This supports sustained NF-κB activity as a feature of beta cells in T1D."
+      ],
+      "tags": [
+        "NF-κB",
+        "ChIP-seq",
+        "IL-1β",
+        "T1D islets"
+      ],
+      "source": {
+        "title": "Multiomics approaches reveal direct NF-κB p65 target genes in pancreatic islets during cytokine exposure and in type 1 diabetes.",
+        "authors": "Martin et al.",
+        "venue": "American Journal of Physiology. Endocrinology and Metabolism",
+        "date": "2026-08-09",
+        "doi": "10.1152/ajpendo.00498.2025",
+        "pmid": "42572286",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42572286/",
+        "peerReviewed": true
+      }
+    },
+    {
+      "kind": "brief",
+      "headline": "Four PDX1 residues are required for chromatin occupancy",
+      "dek": "Deleting a short disordered segment next to the homeodomain leaves protein levels intact but loses target binding.",
+      "body": [
+        "Wokasch and colleagues deleted residues 207-223 of Pdx1 in mice. The protein was made at normal levels and stayed mostly nuclear, yet it lost occupancy at target genes, activated the Ins2 promoter less and caused severe pancreatic hypoplasia with poor endocrine differentiation. Truncation mapping narrowed the requirement to four conserved residues, 207-210. Structure predictions place them in a helix extending from the homeodomain."
+      ],
+      "tags": [
+        "PDX1",
+        "transcription factor",
+        "chromatin occupancy",
+        "pancreas development"
+      ],
+      "source": {
+        "title": "Conserved C-terminal residues adjacent to the canonical PDX1 homeodomain are required for chromatin occupancy and pancreas development.",
+        "authors": "Wokasch et al.",
+        "venue": "Development",
+        "date": "2026-09-22",
+        "doi": "10.1242/dev.205842",
+        "pmid": "42768965",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42768965/",
+        "peerReviewed": true
+      }
+    },
+    {
+      "kind": "brief",
+      "headline": "Beta-cell identity erosion varies by type 2 diabetes subtype",
+      "dek": "An islet scRNA-seq map of 131,083 cells ranks severe insulin-deficient diabetes as the most disrupted subtype.",
+      "body": [
+        "Xie and colleagues assigned 43 islet donors with T2D to the four clinical clusters. Using single-cell data from 32 of these donors, they found that severe insulin-deficient diabetes showed the most beta-cell damage: mature beta subclusters were depleted, global identity was eroded, and autophagy, apoptosis and ER-stress programs were active. Severe insulin-resistant diabetes largely kept beta-cell maturity. Clinical subtype is therefore a confounder that islet omics studies should record."
+      ],
+      "tags": [
+        "scRNA-seq",
+        "T2D subtypes",
+        "beta-cell identity",
+        "human islets"
+      ],
+      "source": {
+        "title": "Single-cell profiling of pancreatic islets maps subtype-associated molecular alterations in type 2 diabetes.",
+        "authors": "Xie et al.",
+        "venue": "Diabetologia",
+        "date": "2026-09-01",
+        "doi": "10.1007/s00125-026-06842-y",
+        "pmid": "42678439",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42678439/",
+        "peerReviewed": true
+      }
+    },
+    {
+      "kind": "brief",
+      "headline": "Nardilysin recruits ISLET1 to a conserved Slc2a2 enhancer",
+      "dek": "Combining public islet ATAC-seq and ChIP-seq with reporter assays traces GLUT2 regulation to a +39 kb enhancer.",
+      "body": [
+        "Using public islet ATAC-seq and ChIP-seq data, Nishi and colleagues identified four active enhancers around the mouse Slc2a2 (GLUT2) locus. Two are conserved in human islets. In MIN6 cells, nardilysin controlled the activity of one conserved enhancer 39 kb downstream of the transcription start site. It bound that enhancer and was needed for ISLET1 recruitment there, regulating GLUT2 in a way that does not depend on MafA."
+      ],
+      "tags": [
+        "enhancer",
+        "GLUT2",
+        "ISLET1",
+        "beta cells"
+      ],
+      "source": {
+        "title": "Nardilysin regulates Slc2a2 expression via an ISLET1-dependent enhancer mechanism in pancreatic β-cells.",
+        "authors": "Nishi et al.",
+        "venue": "Biochemistry and Biophysics Reports",
+        "date": "2026-09-02",
+        "doi": "10.1016/j.bbrep.2026.102772",
+        "pmid": "42733620",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42733620/",
+        "peerReviewed": true
+      }
+    },
+    {
+      "kind": "brief",
+      "headline": "FORGE pipeline automates snMultiome analysis from fragments to regulons",
+      "dek": "A containerised Nextflow workflow links paired snRNA and snATAC data through integration, network inference and differential testing.",
+      "body": [
+        "Solano and colleagues describe FORGE, a Nextflow pipeline with provenance tracking. It runs each modality separately, integrates them with linear and nonlinear latent models, and then carries the data through footprinting, co-accessibility and eRegulon inference. They benchmarked it on human and mouse blood, brain and kidney datasets across two multiome chemistries. For labs running islet or immune multiome cohorts, it could help standardise analyses."
+      ],
+      "tags": [
+        "snMultiome",
+        "pipeline",
+        "Nextflow",
+        "preprint",
+        "methods"
+      ],
+      "source": {
+        "title": "Flow Orchestrated Regulatory Genomics Engine (FORGE): A Configurable Nextflow Pipeline for End-to-End snMultiome Analysis.",
+        "authors": "Solano et al.",
+        "venue": "bioRxiv",
+        "date": "2026-09-16",
+        "doi": "10.64898/2026.09.10.750690",
+        "pmid": "42780179",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42780179/",
+        "peerReviewed": false
+      }
+    },
+    {
+      "kind": "brief",
+      "headline": "Reprogramming PBMCs to iPSCs largely resets methylation age",
+      "dek": "Array profiling of 99 donor-matched pairs from the GESTALT cohort finds epigenetic-clock age wiped back toward zero.",
+      "body": [
+        "Reed and colleagues reprogrammed PBMCs from 99 healthy GESTALT participants into iPSCs and compared genome-wide methylation before and after. Epigenetic clocks put the iPSCs at an early methylation age, meaning most age-associated drift was erased. Each cell type kept its own set of genotype-driven methylation QTLs. The result matters for iPSC-derived islet or immune models of erosion: donor age is not carried over."
+      ],
+      "tags": [
+        "DNA methylation",
+        "epigenetic clock",
+        "iPSC",
+        "reprogramming"
+      ],
+      "source": {
+        "title": "Characterization of DNA methylation in PBMCs and donor-matched iPSCs shows age-related methylation is reset during stem cell reprogramming.",
+        "authors": "Reed et al.",
+        "venue": "PLoS One",
+        "date": "2026-09-08",
+        "doi": "10.1371/journal.pone.0356501",
+        "pmid": "42709743",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42709743/",
+        "peerReviewed": true
+      }
+    }
+  ]
+}
